@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event Registration | NXG Hightech</title>
-  <meta name="description" content="Register for Siemens PLM-NX Tech Forum 2024 and technical workshops organized by NXG Hightech.">
+  <title>Delegate Event Registration Portal | NXG Hightech</title>
+  <meta name="description" content="Register for upcoming Siemens PLM-NX Tech Forum, NX Mold Wizard Masterclass, and FloTHERM XT Webinars. Complimentary delegate passes by NXG Hightech.">
 
   <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -25,7 +25,7 @@
             brandDark: '#060b18',
             brandNavy: '#071022',
             brandCyan: '#00c8ff',
-            cardDark: '#081329',
+            cardDark: '#060c1d',
             siemensTeal: '#00a3a6',
           },
           fontFamily: {
@@ -38,10 +38,15 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
 </head>
-<body class="bg-white text-slate-800 font-sans antialiased overflow-x-hidden selection:bg-[#0084d6] selection:text-white">
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-[#0084d6] selection:text-white">
 
-  <!-- ================= 1. HEADER / NAVBAR ================= -->
+  <!-- ================= 1. TOP NAVBAR ================= -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all duration-200 shadow-sm" id="mainHeader">
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between h-16 sm:h-[76px]">
@@ -55,10 +60,10 @@
           </div>
         </a>
 
-        <!-- Desktop Navigation: Home, About, Solutions, Industries, Services, Resources, Contact -->
+        <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center gap-6 xl:gap-8">
-          <a href="index.html" class="text-[#0084d6] font-bold border-b-2 border-[#0084d6] pb-1 text-sm">Home</a>
-          <a href="#about" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">About</a>
+          <a href="index.html" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">Home</a>
+          <a href="about.html" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">About</a>
 
           <!-- Solutions Dropdown -->
           <div class="relative dropdown group py-2">
@@ -119,12 +124,12 @@
               <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-[#0084d6] transition-transform group-hover:rotate-180"></i>
             </button>
             <div class="dropdown-menu absolute top-full left-0 hidden w-56 bg-white border border-slate-200 rounded-xl shadow-xl py-2 z-50">
-              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Mold-Tool-Die</a>
-              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Automotive & EV</a>
-              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Consumer Goods</a>
-              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Plastic Components</a>
-              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Medical Devices</a>
-              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Sheet Metal & Machinery</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Automotive & EV</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Aerospace & Defense</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Industrial Machinery</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Consumer Products</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Energy & Utilities</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Medical Devices</a>
             </div>
           </div>
 
@@ -143,26 +148,26 @@
             </div>
           </div>
 
-          <!-- Resources Dropdown -->
+          <!-- Resources Dropdown (Active) -->
           <div class="relative dropdown group py-2">
-            <button class="flex items-center gap-1 text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">
+            <button class="flex items-center gap-1 text-[#0084d6] font-bold border-b-2 border-[#0084d6] pb-1 text-sm">
               <span>Resources</span>
-              <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-[#0084d6] transition-transform group-hover:rotate-180"></i>
+              <i class="fa-solid fa-chevron-down text-[10px] text-[#0084d6] transition-transform group-hover:rotate-180"></i>
             </button>
             <div class="dropdown-menu absolute top-full left-0 hidden w-52 bg-white border border-slate-200 rounded-xl shadow-xl py-2 z-50">
               <a href="events.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Events & Tech Forum</a>
-              <a href="event-registration.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Event Registration</a>
+              <a href="event-registration.html" class="block px-4 py-2 text-xs text-[#0084d6] font-bold bg-slate-50">Event Registration</a>
             </div>
           </div>
 
           <a href="contact-us.html" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">Contact</a>
         </nav>
 
-        <!-- Right Side: Search & CTA Button (Exact Oval Match) -->
+        <!-- Right Side: Search & CTA Button -->
         <div class="flex items-center gap-2 sm:gap-3.5">
-          <button onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})" class="p-1.5 text-slate-500 hover:text-[#0084d6] transition text-sm sm:text-base flex-shrink-0" title="Search Solutions">
+          <a href="index.html#solutions" class="p-1.5 text-slate-500 hover:text-[#0084d6] transition text-sm sm:text-base flex-shrink-0" title="Search Solutions">
             <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
+          </a>
           
           <!-- Desktop CTA -->
           <button onclick="openExpertModal()" class="hidden sm:inline-flex items-center gap-2 bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-xs sm:text-sm font-bold px-5 sm:px-6 py-2.5 rounded-full shadow-md shadow-blue-500/20 transition whitespace-nowrap">
@@ -170,7 +175,7 @@
             <i class="fa-solid fa-arrow-right text-[11px]"></i>
           </button>
 
-          <!-- Mobile Compact Oval Button (Exact Match to User Screenshot) -->
+          <!-- Mobile Compact Oval Button -->
           <button onclick="openExpertModal()" class="sm:hidden flex flex-col items-center justify-center bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-[10px] font-bold w-[74px] h-[50px] rounded-full shadow-md shadow-blue-500/25 leading-tight flex-shrink-0">
             <span>Talk to</span>
             <span class="inline-flex items-center gap-1">an <i class="fa-solid fa-arrow-right text-[8px]"></i></span>
@@ -186,16 +191,16 @@
       </div>
     </div>
 
-    <!-- Mobile Navigation Drawer (Modern Slide-Down with Icons & Quick Actions) -->
+    <!-- Mobile Navigation Drawer -->
     <div id="mobileMenu" class="hidden lg:hidden bg-white/98 backdrop-blur-xl border-b border-slate-200 px-5 py-4 shadow-2xl transition-all duration-300">
       <div class="flex flex-col gap-1 text-xs sm:text-sm font-semibold divide-y divide-slate-100">
         <div class="py-1.5 flex flex-col gap-1">
-          <a href="index.html" class="mobile-nav-link flex items-center justify-between text-[#0084d6] bg-blue-50/70 px-3 py-2 rounded-lg font-bold">
+          <a href="index.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
             <span class="flex items-center gap-2.5"><i class="fa-solid fa-house w-4"></i> Home</span>
-            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
           </a>
-          <a href="#about" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
-            <span class="flex items-center gap-2.5"><i class="fa-solid fa-building w-4 text-slate-400"></i> About NXG</span>
+          <a href="about.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-building w-4"></i> About NXG</span>
             <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
           </a>
         </div>
@@ -229,6 +234,10 @@
             <span class="flex items-center gap-2.5"><i class="fa-solid fa-calendar-days text-[#0084d6] w-4"></i> Events & Tech Forum</span>
             <span class="text-[9px] bg-cyan-100 text-[#0084d6] font-bold px-2 py-0.5 rounded-full">Upcoming</span>
           </a>
+          <a href="event-registration.html" class="mobile-nav-link flex items-center justify-between text-[#0084d6] bg-blue-50/70 px-3 py-2 rounded-lg font-bold">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-id-card w-4"></i> Event Registration</span>
+            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </a>
           <a href="contact-us.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
             <span class="flex items-center gap-2.5"><i class="fa-solid fa-envelope text-slate-400 w-4"></i> Contact Us</span>
             <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
@@ -245,103 +254,207 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative bg-[#060b18] text-white pt-14 pb-14 overflow-hidden">
-    <div class="absolute inset-0 bg-hero-pattern pointer-events-none opacity-20"></div>
-    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 relative z-10 text-center max-w-2xl mx-auto">
-      <span class="inline-block text-[11px] font-bold tracking-[0.16em] uppercase text-cyan-400 mb-2">
-        DELEGATE REGISTRATION PORTAL
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+
+  <!-- ================= 2. HERO BANNER ================= -->
+  <section class="relative bg-[#060f22] text-white pt-12 sm:pt-16 pb-12 sm:pb-16 overflow-hidden">
+    <div class="absolute inset-0 bg-hero-pattern opacity-30 pointer-events-none"></div>
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6 relative z-10 text-center max-w-2xl mx-auto space-y-3">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-400/25 text-[#00c8ff] text-[9.5px] sm:text-[11px] font-bold tracking-wider uppercase">
+        <span>DELEGATE REGISTRATION DESK</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-black text-white leading-tight">
         Siemens PLM-NX Event Registration
       </h1>
-      <p class="text-slate-300 text-sm leading-relaxed mt-2">
-        Join engineering leaders and Siemens specialists. Complete the registration form below to receive your delegate pass and session access credentials.
+      <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+        Fill out your professional details below to reserve your delegate pass. You will receive an official confirmation receipt and entry barcode directly via email.
       </p>
     </div>
   </section>
 
-  <!-- Registration Form Section -->
-  <section class="py-16 bg-slate-50 border-b border-slate-200">
-    <div class="max-w-2xl mx-auto px-4 sm:px-6">
-      <div class="bg-white border border-slate-200 rounded-3xl p-8 sm:p-10 shadow-xl">
-        <form class="space-y-4" onsubmit="event.preventDefault(); document.getElementById('regSuccess').classList.remove('hidden'); this.classList.add('hidden');">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name *</label>
-              <input type="text" required placeholder="e.g. Rahul Sharma" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
-            </div>
-            <div>
-              <label class="block text-xs font-semibold text-slate-700 mb-1">Company / Organization *</label>
-              <input type="text" required placeholder="e.g. Acme Toolings Pvt Ltd" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
-            </div>
+
+  <!-- ================= 3. REGISTRATION GRID ================= -->
+  <section class="py-12 sm:py-16 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-[1240px] mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        
+        <!-- Left Column: Event Information & Delegate Perks -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+            <span class="text-xs font-bold text-[#0084d6] uppercase tracking-wider block">Delegate Package Inclusions</span>
+            <h3 class="text-xl font-bold text-slate-900 leading-snug">What's Included with Your Pass</h3>
+            
+            <ul class="space-y-3 text-xs text-slate-600">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-500 text-sm mt-0.5 flex-shrink-0"></i>
+                <span><strong>All-Day Access:</strong> Full entry to keynote sessions, breakout masterclasses, and hands-on software labs.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-500 text-sm mt-0.5 flex-shrink-0"></i>
+                <span><strong>Siemens Certificate:</strong> Official Certificate of Participation issued by NXG Hightech &amp; Siemens.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-500 text-sm mt-0.5 flex-shrink-0"></i>
+                <span><strong>Trial Software Access:</strong> 30-day evaluation trial licenses and sample CAD/CAM exercise files.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-500 text-sm mt-0.5 flex-shrink-0"></i>
+                <span><strong>Executive Hospitality:</strong> Networking breakfast, buffet luncheon, and closing high-tea included.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-500 text-sm mt-0.5 flex-shrink-0"></i>
+                <span><strong>1-on-1 Architect Consultation:</strong> Direct discussion with Siemens Certified Solution Architects.</span>
+              </li>
+            </ul>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-xs font-semibold text-slate-700 mb-1">Work Email *</label>
-              <input type="email" required placeholder="rahul@company.com" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+          <div class="bg-[#050f24] text-white p-6 rounded-3xl border border-blue-500/20 shadow-md space-y-3">
+            <div class="flex items-center gap-2 text-cyan-400 text-xs font-bold uppercase tracking-wider">
+              <i class="fa-solid fa-building-circle-check"></i>
+              <span>Venue Information</span>
             </div>
-            <div>
-              <label class="block text-xs font-semibold text-slate-700 mb-1">Mobile Number *</label>
-              <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
-            </div>
+            <h4 class="text-base font-bold text-white">Siemens Center of Excellence &amp; Tech Forum</h4>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              NXG Hightech Headquarters, 827, T3, Golden-I, Tech Zone IV, Greater Noida West, Uttar Pradesh - 201009.<br>
+              <span class="text-slate-400 mt-1 block">Live stream link will also be dispatched for remote delegates.</span>
+            </p>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-xs font-semibold text-slate-700 mb-1">Job Title / Designation *</label>
-              <input type="text" required placeholder="e.g. Head of Tooling / CAM Lead" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
-            </div>
-            <div>
-              <label class="block text-xs font-semibold text-slate-700 mb-1">City / Location *</label>
-              <input type="text" required placeholder="e.g. Noida / Gurgaon / Ludhiana" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
-            </div>
-          </div>
-
-          <div>
-            <label class="block text-xs font-semibold text-slate-700 mb-1">Select Event / Workshop Session *</label>
-            <select class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
-              <option>Full Pass: Siemens PLM-NX Tech Forum 2024</option>
-              <option>Masterclass: NX Mold Wizard Automation for Injection Tooling</option>
-              <option>Workshop: 5-Axis CNC Post-Processing & ISV Machine Simulation</option>
-              <option>Webinar: FloTHERM XT AI Hardware Electronics Cooling</option>
-              <option>Executive Session: Teamcenter PLM Migration & Cloud Adoption</option>
-            </select>
-          </div>
-
-          <div>
-            <label class="block text-xs font-semibold text-slate-700 mb-1">Questions for Siemens Product Specialists</label>
-            <textarea rows="3" placeholder="Any specific technical challenges or software questions you would like addressed during the event..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]"></textarea>
-          </div>
-
-          <button type="submit" class="w-full bg-[#0084d6] hover:bg-[#0074be] text-white font-bold py-3 rounded-xl shadow-lg transition text-xs mt-2">
-            Confirm Delegate Registration →
-          </button>
-        </form>
-
-        <div id="regSuccess" class="hidden text-center py-10 space-y-3">
-          <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-2xl">
-            <i class="fa-solid fa-circle-check"></i>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900">Registration Confirmed!</h3>
-          <p class="text-xs text-slate-500 max-w-md mx-auto leading-relaxed">
-            Thank you for registering. We have sent the event schedule, venue details, and digital delegate badge to your email.
-          </p>
-          <a href="index.html" class="inline-block mt-4 text-xs font-bold text-[#0084d6] hover:underline">Return to Home</a>
         </div>
+
+        <!-- Right Column: Registration Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-xl">
+            
+            <form id="delegatePortalForm" class="space-y-4" onsubmit="handlePortalSubmit(event)">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Full Name *</label>
+                  <input type="text" name="name" required placeholder="e.g. Rahul Sharma" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Company / Organization *</label>
+                  <input type="text" name="company" required placeholder="e.g. Acme Precision Toolings" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Corporate Email Address *</label>
+                  <input type="email" name="email" required placeholder="rahul@company.com" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Mobile / WhatsApp Number *</label>
+                  <input type="tel" name="phone" required placeholder="+91 98765 43210" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Job Title / Designation *</label>
+                  <input type="text" name="designation" required placeholder="e.g. Head of Tooling / CAM Lead" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">City / Location *</label>
+                  <input type="text" name="city" required placeholder="e.g. Noida / Gurgaon / Ludhiana" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Select Event Track *</label>
+                <select name="eventTrack" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+                  <option value="Full Access Pass: Siemens PLM-NX Tech Forum India">Full Access Pass: Siemens PLM-NX Tech Forum India</option>
+                  <option value="Specialized Masterclass: NX Mold Wizard Automation">Specialized Masterclass: NX Mold Wizard Automation</option>
+                  <option value="Workshop: 5-Axis CNC Post-Processing & Machine Simulation">Workshop: 5-Axis CNC Post-Processing &amp; Machine Simulation</option>
+                  <option value="Webinar: FloTHERM XT Electronics Thermal Cooling">Webinar: FloTHERM XT Electronics Thermal Cooling</option>
+                  <option value="Executive Briefing: Teamcenter PLM Cloud Migration">Executive Briefing: Teamcenter PLM Cloud Migration</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Attendance Mode</label>
+                <div class="grid grid-cols-2 gap-3">
+                  <label class="flex items-center gap-2 p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:border-[#0084d6]">
+                    <input type="radio" name="attendanceMode" value="In-Person at Tech Forum Venue" checked class="text-[#0084d6]">
+                    <span class="text-xs font-semibold text-slate-800">In-Person (Venue)</span>
+                  </label>
+                  <label class="flex items-center gap-2 p-2.5 bg-slate-50 rounded-xl border border-slate-200 cursor-pointer hover:border-[#0084d6]">
+                    <input type="radio" name="attendanceMode" value="Live Interactive Virtual Stream" class="text-[#0084d6]">
+                    <span class="text-xs font-semibold text-slate-800">Virtual Stream (Online)</span>
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">Questions / Specific CAD/CAM Challenges</label>
+                <textarea name="notes" rows="3" placeholder="Any specific technical challenges, post-processor requirements, or tooling workflows you would like demonstrated..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]"></textarea>
+              </div>
+
+              <div class="pt-2">
+                <button type="submit" class="w-full bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-blue-500/25 transition text-xs sm:text-sm flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-id-card"></i>
+                  <span>Submit Registration &amp; Generate Pass →</span>
+                </button>
+              </div>
+
+            </form>
+
+            <!-- Pass Confirmation Preview -->
+            <div id="portalSuccess" class="hidden text-center py-6 space-y-4">
+              <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-3xl">
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+              <h3 class="text-2xl font-black text-slate-900">Delegate Pass Confirmed!</h3>
+              <p class="text-xs text-slate-600 max-w-md mx-auto leading-relaxed">
+                Your registration has been successfully processed. Here is your digital delegate pass summary:
+              </p>
+
+              <!-- Digital Delegate Badge Card -->
+              <div class="bg-gradient-to-br from-[#060f22] to-[#0a1838] text-white p-6 rounded-2xl border border-cyan-500/30 max-w-md mx-auto text-left shadow-2xl relative overflow-hidden">
+                <div class="flex items-center justify-between pb-3 border-b border-white/10">
+                  <span class="text-[10px] font-bold text-[#00c8ff] uppercase tracking-wider">OFFICIAL DELEGATE PASS</span>
+                  <span class="text-[10px] bg-emerald-500/20 text-emerald-400 border border-emerald-400/30 px-2 py-0.5 rounded-full font-bold">CONFIRMED</span>
+                </div>
+                <div class="py-4 space-y-1">
+                  <div class="text-lg font-black text-white" id="passName">Rahul Sharma</div>
+                  <div class="text-xs text-slate-300" id="passCompany">Acme Precision Toolings</div>
+                  <div class="text-[11px] text-cyan-300 pt-1" id="passTrack">Siemens PLM-NX Tech Forum India</div>
+                </div>
+                <div class="pt-3 border-t border-white/10 flex items-center justify-between text-[10px] text-slate-400">
+                  <span>Venue: Golden-I, Greater Noida West</span>
+                  <i class="fa-solid fa-qrcode text-xl text-white"></i>
+                </div>
+              </div>
+
+              <div class="pt-3 flex items-center justify-center gap-4">
+                <button onclick="window.print()" class="text-xs font-bold text-slate-700 hover:text-[#0084d6] flex items-center gap-1.5 border border-slate-300 px-4 py-2 rounded-xl">
+                  <i class="fa-solid fa-print"></i>
+                  <span>Print Pass</span>
+                </button>
+                <a href="events.html" class="text-xs font-bold text-[#0084d6] hover:underline">View Event Agenda</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
+
     </div>
   </section>
 
-    <!-- ================= 12. ENTERPRISE FOOTER (EXACT MATCH) ================= -->
+
+  <!-- ================= 12. ENTERPRISE FOOTER ================= -->
+    <!-- ================= 12. ENTERPRISE FOOTER ================= -->
   <footer class="bg-[#030712] text-slate-400 pt-14 pb-8 border-t border-slate-800">
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
       
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 pb-12 border-b border-slate-800">
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-12 gap-6 sm:gap-8 pb-12 border-b border-slate-800">
         
-        <!-- Col 1: NXG Brand Info (lg:col-span-4) -->
-        <div class="lg:col-span-4 space-y-4">
+        <!-- Col 1: NXG Brand Info (Full width on mobile, 4 cols on desktop) -->
+        <div class="col-span-2 lg:col-span-4 space-y-4">
           <a href="index.html" class="flex items-center gap-2.5">
             <img src="assets/site_logo.png" alt="NXG HIGHTECH" class="h-9 w-auto object-contain">
             <div class="flex flex-col">
@@ -353,7 +466,7 @@
             NXG Hightech is an authorised channel partner for Siemens Digital Industries Software, delivering engineering and manufacturing solutions to help businesses design better, manufacture smarter and innovate faster.
           </p>
           
-          <!-- Social Media Icons (Exact Match Colors) -->
+          <!-- Social Media Icons -->
           <div class="flex items-center gap-2.5 pt-1">
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="w-7 h-7 rounded-lg bg-[#0077b5] text-white flex items-center justify-center text-xs hover:opacity-90 transition shadow-sm" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin-in"></i>
@@ -370,23 +483,23 @@
           </div>
         </div>
 
-        <!-- Col 2: Quick Links (lg:col-span-2) -->
-        <div class="lg:col-span-2">
+        <!-- Col 2: Quick Links -->
+        <div class="col-span-1 lg:col-span-2">
           <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Quick Links</h4>
           <ul class="space-y-2 text-xs">
             <li><a href="index.html" class="hover:text-white transition">Home</a></li>
-            <li><a href="#about" class="hover:text-white transition">About Us</a></li>
-            <li><a href="#solutions" class="hover:text-white transition">Solutions</a></li>
-            <li><a href="#industries" class="hover:text-white transition">Industries</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="index.html#solutions" class="hover:text-white transition">Solutions</a></li>
+            <li><a href="index.html#industries" class="hover:text-white transition">Industries</a></li>
             <li><a href="services.html" class="hover:text-white transition">Services</a></li>
-            <li><a href="events.html" class="hover:text-white transition">Resources</a></li>
-            <li><a href="#blog" class="hover:text-white transition">Blog</a></li>
+            <li><a href="events.html" class="hover:text-white transition">Events &amp; Forum</a></li>
+            <li><a href="index.html#blog" class="hover:text-white transition">Blog</a></li>
             <li><a href="contact-us.html" class="hover:text-white transition">Contact</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Our Solutions (lg:col-span-2) -->
-        <div class="lg:col-span-2">
+        <!-- Col 3: Our Solutions -->
+        <div class="col-span-1 lg:col-span-2">
           <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Our Solutions</h4>
           <ul class="space-y-2 text-xs">
             <li><a href="nx-ug.html" class="hover:text-white transition">NX CAD</a></li>
@@ -400,8 +513,8 @@
           </ul>
         </div>
 
-        <!-- Col 4: Our Services (lg:col-span-2) -->
-        <div class="lg:col-span-2">
+        <!-- Col 4: Our Services -->
+        <div class="col-span-1 lg:col-span-2">
           <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Our Services</h4>
           <ul class="space-y-2 text-xs">
             <li><a href="services.html" class="hover:text-white transition">Software Sales &amp; Support</a></li>
@@ -415,8 +528,8 @@
           </ul>
         </div>
 
-        <!-- Col 5: Contact Us (lg:col-span-2) -->
-        <div class="lg:col-span-2">
+        <!-- Col 5: Contact Us -->
+        <div class="col-span-1 sm:col-span-2 lg:col-span-2">
           <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Contact Us</h4>
           <ul class="space-y-3 text-xs">
             <li>
@@ -433,7 +546,7 @@
             </li>
             <li class="flex items-start gap-2.5">
               <i class="fa-solid fa-location-dot text-[#0084d6] text-xs mt-0.5"></i>
-              <span class="leading-relaxed">B-123, Sector 62,<br>Noida, Uttar Pradesh, India</span>
+              <span class="leading-relaxed">827, T3, Golden-I, Tech Zone IV,<br>Greater Noida West, UP, India</span>
             </li>
           </ul>
         </div>
@@ -456,7 +569,7 @@
   </footer>
 
   <!-- Floating Back to Top Button -->
-  <button id="backToTopBtn" aria-label="Back to Top" class="fixed bottom-6 right-6 w-9 h-9 rounded-full bg-[#0084d6] hover:bg-[#0074be] text-white shadow-xl flex items-center justify-center transition-all duration-300 z-40">
+  <button id="backToTopBtn" aria-label="Back to Top" class="fixed bottom-6 right-6 w-9 h-9 rounded-full bg-[#0084d6] hover:bg-[#0074be] text-white shadow-xl flex items-center justify-center transition-all duration-300 z-40 opacity-0 translate-y-6 pointer-events-none">
     <i class="fa-solid fa-arrow-up text-xs"></i>
   </button>
 
@@ -500,7 +613,7 @@
           <label class="block text-[11px] font-semibold text-slate-700 mb-1">Solution of Interest</label>
           <select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
             <option value="NX CAD">Siemens NX CAD (Product Design / Mold Wizard)</option>
-            <option value="NX CAM">Siemens NX CAM & Post-Processor Development</option>
+            <option value="NX CAM">Siemens NX CAM &amp; Post-Processor Development</option>
             <option value="Teamcenter">Teamcenter PLM Implementation</option>
             <option value="Simcenter">Simcenter STAR-CCM+ / FloTHERM XT</option>
             <option value="Solid Edge">Solid Edge 3D CAD</option>
@@ -529,7 +642,23 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+    function handlePortalSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('delegatePortalForm');
+      const success = document.getElementById('portalSuccess');
+      const name = form.elements['name'].value;
+      const company = form.elements['company'].value;
+      const track = form.elements['eventTrack'].value;
 
+      document.getElementById('passName').textContent = name;
+      document.getElementById('passCompany').textContent = company;
+      document.getElementById('passTrack').textContent = track;
+
+      form.classList.add('hidden');
+      success.classList.remove('hidden');
+      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
 </body>
-</html></body>
 </html>

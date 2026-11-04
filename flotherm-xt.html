@@ -58,7 +58,7 @@
         <!-- Desktop Navigation: Home, About, Solutions, Industries, Services, Resources, Contact -->
         <nav class="hidden lg:flex items-center gap-6 xl:gap-8">
           <a href="index.html" class="text-[#0084d6] font-bold border-b-2 border-[#0084d6] pb-1 text-sm">Home</a>
-          <a href="#about" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">About</a>
+          <a href="about.html" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">About</a>
 
           <!-- Solutions Dropdown -->
           <div class="relative dropdown group py-2">
@@ -194,7 +194,7 @@
             <span class="flex items-center gap-2.5"><i class="fa-solid fa-house w-4"></i> Home</span>
             <i class="fa-solid fa-chevron-right text-[10px]"></i>
           </a>
-          <a href="#about" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
+          <a href="about.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
             <span class="flex items-center gap-2.5"><i class="fa-solid fa-building w-4 text-slate-400"></i> About NXG</span>
             <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
           </a>
@@ -306,13 +306,14 @@
   </section>
 
     <!-- ================= 12. ENTERPRISE FOOTER (EXACT MATCH) ================= -->
+    <!-- ================= 12. ENTERPRISE FOOTER ================= -->
   <footer class="bg-[#030712] text-slate-400 pt-14 pb-8 border-t border-slate-800">
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
       
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 pb-12 border-b border-slate-800">
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-12 gap-6 sm:gap-8 pb-12 border-b border-slate-800">
         
-        <!-- Col 1: NXG Brand Info (lg:col-span-4) -->
-        <div class="lg:col-span-4 space-y-4">
+        <!-- Col 1: NXG Brand Info (Full width on mobile, 4 cols on desktop) -->
+        <div class="col-span-2 lg:col-span-4 space-y-4">
           <a href="index.html" class="flex items-center gap-2.5">
             <img src="assets/site_logo.png" alt="NXG HIGHTECH" class="h-9 w-auto object-contain">
             <div class="flex flex-col">
@@ -324,7 +325,7 @@
             NXG Hightech is an authorised channel partner for Siemens Digital Industries Software, delivering engineering and manufacturing solutions to help businesses design better, manufacture smarter and innovate faster.
           </p>
           
-          <!-- Social Media Icons (Exact Match Colors) -->
+          <!-- Social Media Icons -->
           <div class="flex items-center gap-2.5 pt-1">
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="w-7 h-7 rounded-lg bg-[#0077b5] text-white flex items-center justify-center text-xs hover:opacity-90 transition shadow-sm" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin-in"></i>
@@ -341,23 +342,23 @@
           </div>
         </div>
 
-        <!-- Col 2: Quick Links (lg:col-span-2) -->
-        <div class="lg:col-span-2">
+        <!-- Col 2: Quick Links -->
+        <div class="col-span-1 lg:col-span-2">
           <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Quick Links</h4>
           <ul class="space-y-2 text-xs">
             <li><a href="index.html" class="hover:text-white transition">Home</a></li>
-            <li><a href="#about" class="hover:text-white transition">About Us</a></li>
-            <li><a href="#solutions" class="hover:text-white transition">Solutions</a></li>
-            <li><a href="#industries" class="hover:text-white transition">Industries</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="index.html#solutions" class="hover:text-white transition">Solutions</a></li>
+            <li><a href="index.html#industries" class="hover:text-white transition">Industries</a></li>
             <li><a href="services.html" class="hover:text-white transition">Services</a></li>
-            <li><a href="events.html" class="hover:text-white transition">Resources</a></li>
-            <li><a href="#blog" class="hover:text-white transition">Blog</a></li>
+            <li><a href="events.html" class="hover:text-white transition">Events &amp; Forum</a></li>
+            <li><a href="index.html#blog" class="hover:text-white transition">Blog</a></li>
             <li><a href="contact-us.html" class="hover:text-white transition">Contact</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Our Solutions (lg:col-span-2) -->
-        <div class="lg:col-span-2">
+        <!-- Col 3: Our Solutions -->
+        <div class="col-span-1 lg:col-span-2">
           <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Our Solutions</h4>
           <ul class="space-y-2 text-xs">
             <li><a href="nx-ug.html" class="hover:text-white transition">NX CAD</a></li>
@@ -371,8 +372,8 @@
           </ul>
         </div>
 
-        <!-- Col 4: Our Services (lg:col-span-2) -->
-        <div class="lg:col-span-2">
+        <!-- Col 4: Our Services -->
+        <div class="col-span-1 lg:col-span-2">
           <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Our Services</h4>
           <ul class="space-y-2 text-xs">
             <li><a href="services.html" class="hover:text-white transition">Software Sales &amp; Support</a></li>
@@ -386,8 +387,8 @@
           </ul>
         </div>
 
-        <!-- Col 5: Contact Us (lg:col-span-2) -->
-        <div class="lg:col-span-2">
+        <!-- Col 5: Contact Us -->
+        <div class="col-span-1 sm:col-span-2 lg:col-span-2">
           <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Contact Us</h4>
           <ul class="space-y-3 text-xs">
             <li>
@@ -404,7 +405,7 @@
             </li>
             <li class="flex items-start gap-2.5">
               <i class="fa-solid fa-location-dot text-[#0084d6] text-xs mt-0.5"></i>
-              <span class="leading-relaxed">B-123, Sector 62,<br>Noida, Uttar Pradesh, India</span>
+              <span class="leading-relaxed">827, T3, Golden-I, Tech Zone IV,<br>Greater Noida West, UP, India</span>
             </li>
           </ul>
         </div>
@@ -502,5 +503,4 @@
   <script src="script.js"></script>
 
 </body>
-</html></body>
 </html>

@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | NXG Hightech - Authorized Siemens Solution Partner</title>
+  <meta name="description" content="Learn about NXG Hightech (P) Ltd, an authorized channel partner for Siemens Digital Industries Software providing CAD/CAM/CAE/PLM solutions, implementation, and consulting across India.">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#0084d6',
+            brandDark: '#060b18',
+            brandNavy: '#071022',
+            brandCyan: '#00c8ff',
+            cardDark: '#060c1d',
+            siemensTeal: '#00a3a6',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-[#0084d6] selection:text-white">
+
+  <!-- ================= 1. TOP NAVBAR ================= -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all duration-200 shadow-sm" id="mainHeader">
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16 sm:h-[76px]">
+        
+        <!-- Official Logo: NXG HIGHTECH (Mobile Responsive) -->
+        <a href="index.html" class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+          <img src="assets/site_logo.png" alt="NXG HIGHTECH Logo" class="h-8 sm:h-11 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="text-sm sm:text-xl font-black tracking-tight text-[#091124] leading-none">NXG HIGHTECH</span>
+            <span class="text-[8px] sm:text-[9px] font-bold tracking-wider sm:tracking-widest text-[#0084d6] uppercase mt-0.5">SIEMENS SOLUTION PARTNER</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-6 xl:gap-8">
+          <a href="index.html" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">Home</a>
+          <a href="about.html" class="text-[#0084d6] font-bold border-b-2 border-[#0084d6] pb-1 text-sm">About</a>
+
+          <!-- Solutions Dropdown -->
+          <div class="relative dropdown group py-2">
+            <button class="flex items-center gap-1 text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">
+              <span>Solutions</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-[#0084d6] transition-transform group-hover:rotate-180"></i>
+            </button>
+            <div class="dropdown-menu absolute top-full left-0 hidden w-64 bg-white border border-slate-200 rounded-xl shadow-xl py-2 z-50">
+              <a href="nx-ug.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">
+                <i class="fa-solid fa-cube text-[#0084d6] w-4"></i>
+                <div>
+                  <div class="font-bold">Siemens NX (CAD / CAM)</div>
+                  <div class="text-[10px] text-slate-500">Product Design & 5-Axis CAM</div>
+                </div>
+              </a>
+              <a href="teamcenter.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">
+                <i class="fa-solid fa-sitemap text-[#00a3a6] w-4"></i>
+                <div>
+                  <div class="font-bold">Teamcenter PLM</div>
+                  <div class="text-[10px] text-slate-500">Lifecycle & BOM Collaboration</div>
+                </div>
+              </a>
+              <a href="solid-edge.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">
+                <i class="fa-solid fa-shapes text-blue-500 w-4"></i>
+                <div>
+                  <div class="font-bold">Solid Edge</div>
+                  <div class="text-[10px] text-slate-500">Synchronous 3D Design</div>
+                </div>
+              </a>
+              <a href="star-ccm.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">
+                <i class="fa-solid fa-wind text-cyan-600 w-4"></i>
+                <div>
+                  <div class="font-bold">Simcenter STAR-CCM+</div>
+                  <div class="text-[10px] text-slate-500">CFD & Multiphysics Simulation</div>
+                </div>
+              </a>
+              <a href="flotherm-xt.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">
+                <i class="fa-solid fa-fire-flame-curved text-amber-500 w-4"></i>
+                <div>
+                  <div class="font-bold">Simcenter FloTHERM XT</div>
+                  <div class="text-[10px] text-slate-500">Electronics Cooling Analysis</div>
+                </div>
+              </a>
+              <a href="services.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">
+                <i class="fa-solid fa-gears text-purple-600 w-4"></i>
+                <div>
+                  <div class="font-bold">Tecnomatix</div>
+                  <div class="text-[10px] text-slate-500">Digital Factory & Robotics</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Industries Dropdown -->
+          <div class="relative dropdown group py-2">
+            <button class="flex items-center gap-1 text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">
+              <span>Industries</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-[#0084d6] transition-transform group-hover:rotate-180"></i>
+            </button>
+            <div class="dropdown-menu absolute top-full left-0 hidden w-56 bg-white border border-slate-200 rounded-xl shadow-xl py-2 z-50">
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Automotive & EV</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Aerospace & Defense</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Industrial Machinery</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Consumer Products</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Energy & Utilities</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Medical Devices</a>
+            </div>
+          </div>
+
+          <!-- Services Dropdown -->
+          <div class="relative dropdown group py-2">
+            <button class="flex items-center gap-1 text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">
+              <span>Services</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-[#0084d6] transition-transform group-hover:rotate-180"></i>
+            </button>
+            <div class="dropdown-menu absolute top-full left-0 hidden w-60 bg-white border border-slate-200 rounded-xl shadow-xl py-2 z-50">
+              <a href="services.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Software Sales & Support</a>
+              <a href="teamcenter.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Teamcenter Implementation</a>
+              <a href="services.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Legacy CAD Data Migration</a>
+              <a href="services.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Design & Simulation Consultancy</a>
+              <a href="nx-ug.html#cam" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">CAM & Post-Processor Service</a>
+            </div>
+          </div>
+
+          <!-- Resources Dropdown -->
+          <div class="relative dropdown group py-2">
+            <button class="flex items-center gap-1 text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">
+              <span>Resources</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-[#0084d6] transition-transform group-hover:rotate-180"></i>
+            </button>
+            <div class="dropdown-menu absolute top-full left-0 hidden w-52 bg-white border border-slate-200 rounded-xl shadow-xl py-2 z-50">
+              <a href="events.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Events & Tech Forum</a>
+              <a href="event-registration.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Event Registration</a>
+            </div>
+          </div>
+
+          <a href="contact-us.html" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">Contact</a>
+        </nav>
+
+        <!-- Right Side: Search & CTA Button -->
+        <div class="flex items-center gap-2 sm:gap-3.5">
+          <a href="index.html#solutions" class="p-1.5 text-slate-500 hover:text-[#0084d6] transition text-sm sm:text-base flex-shrink-0" title="Search Solutions">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          
+          <!-- Desktop CTA -->
+          <button onclick="openExpertModal()" class="hidden sm:inline-flex items-center gap-2 bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-xs sm:text-sm font-bold px-5 sm:px-6 py-2.5 rounded-full shadow-md shadow-blue-500/20 transition whitespace-nowrap">
+            <span>Talk to an Expert</span>
+            <i class="fa-solid fa-arrow-right text-[11px]"></i>
+          </button>
+
+          <!-- Mobile Compact Oval Button -->
+          <button onclick="openExpertModal()" class="sm:hidden flex flex-col items-center justify-center bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-[10px] font-bold w-[74px] h-[50px] rounded-full shadow-md shadow-blue-500/25 leading-tight flex-shrink-0">
+            <span>Talk to</span>
+            <span class="inline-flex items-center gap-1">an <i class="fa-solid fa-arrow-right text-[8px]"></i></span>
+            <span>Expert</span>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button id="mobileMenuBtn" aria-label="Toggle Menu" class="lg:hidden p-1.5 text-slate-800 hover:text-[#0084d6] transition text-xl flex-shrink-0 ml-1">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white/98 backdrop-blur-xl border-b border-slate-200 px-5 py-4 shadow-2xl transition-all duration-300">
+      <div class="flex flex-col gap-1 text-xs sm:text-sm font-semibold divide-y divide-slate-100">
+        <div class="py-1.5 flex flex-col gap-1">
+          <a href="index.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-house w-4"></i> Home</span>
+            <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
+          </a>
+          <a href="about.html" class="mobile-nav-link flex items-center justify-between text-[#0084d6] bg-blue-50/70 px-3 py-2 rounded-lg font-bold">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-building w-4"></i> About NXG</span>
+            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <div class="py-2">
+          <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider px-3 mb-1">Siemens Solutions</div>
+          <div class="grid grid-cols-1 gap-1">
+            <a href="nx-ug.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-cube text-[#0084d6] w-4"></i> Siemens NX (CAD / CAM)</span>
+            </a>
+            <a href="teamcenter.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-sitemap text-[#00a3a6] w-4"></i> Teamcenter PLM</span>
+            </a>
+            <a href="solid-edge.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-shapes text-blue-500 w-4"></i> Solid Edge</span>
+            </a>
+            <a href="star-ccm.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-wind text-cyan-600 w-4"></i> Simcenter STAR-CCM+</span>
+            </a>
+            <a href="flotherm-xt.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-fire-flame-curved text-amber-500 w-4"></i> Simcenter FloTHERM XT</span>
+            </a>
+            <a href="services.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-gears text-purple-600 w-4"></i> Tecnomatix & Services</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="py-2 flex flex-col gap-1">
+          <a href="events.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-calendar-days text-[#0084d6] w-4"></i> Events & Tech Forum</span>
+            <span class="text-[9px] bg-cyan-100 text-[#0084d6] font-bold px-2 py-0.5 rounded-full">Upcoming</span>
+          </a>
+          <a href="contact-us.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-envelope text-slate-400 w-4"></i> Contact Us</span>
+            <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
+          </a>
+        </div>
+
+        <div class="pt-3">
+          <button onclick="openExpertModal(); mobileMenu.classList.add('hidden')" class="w-full bg-[#0084d6] hover:bg-[#0074be] text-white py-3 rounded-full font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-blue-500/25 active:scale-95">
+            <i class="fa-solid fa-comments"></i>
+            <span>Talk to an Expert</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 2. HERO SECTION ================= -->
+  <section class="relative bg-[#060f22] text-white pt-12 sm:pt-20 pb-14 sm:pb-20 overflow-hidden">
+    <div class="absolute inset-0 bg-hero-pattern opacity-30 pointer-events-none"></div>
+    <div class="absolute -top-32 -left-32 w-80 h-80 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -right-32 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-400/25 text-[#00c8ff] text-[9.5px] sm:text-[11px] font-bold tracking-wider uppercase">
+            <span>ABOUT NXG HIGHTECH (P) LTD</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-[46px] font-black text-white leading-[1.15] tracking-tight">
+            Pioneering India's<br>
+            <span class="text-[#00c8ff]">Digital Engineering</span><br>
+            Transformation.
+          </h1>
+
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-xl">
+            NXG Hightech is an Authorised Channel Partner for Siemens Digital Industries Software in India. Headquartered at Golden-I, Greater Noida West, we help manufacturers accelerate product design, simulate multi-physics performance, optimize 5-axis CNC machining, and unify product lifecycles with Teamcenter.
+          </p>
+
+          <div class="flex items-center gap-3 pt-2">
+            <button onclick="openExpertModal()" class="inline-flex items-center justify-center gap-2 bg-[#0084d6] hover:bg-[#0074be] text-white text-xs sm:text-sm font-bold px-6 py-3 rounded-full transition shadow-lg shadow-blue-500/30 active:scale-95">
+              <span>Partner With Us</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+            <a href="contact-us.html" class="inline-flex items-center justify-center border border-white/30 hover:border-white text-white hover:bg-white/10 text-xs sm:text-sm font-semibold px-5 py-3 rounded-full transition">
+              <span>Our Locations</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 relative flex items-center justify-center">
+          <div class="w-full rounded-2xl overflow-hidden border border-blue-500/30 shadow-2xl bg-[#071329] p-1.5">
+            <img src="assets/siemens_building_hd.jpg" alt="NXG Hightech Siemens Channel Partner Headquarters" class="w-full h-auto object-cover rounded-xl">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= 3. STATS STRIP ================= -->
+  <section class="bg-[#040c1d] border-b border-slate-800 text-white py-8 sm:py-12">
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 items-center">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-500/10 border border-blue-400/20 text-[#00c8ff] flex items-center justify-center text-base sm:text-lg flex-shrink-0">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <div class="text-xl sm:text-3xl font-black text-white leading-none">10+</div>
+            <div class="text-[11px] sm:text-xs text-slate-300 font-medium mt-1 leading-tight">Years of Experience</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-500/10 border border-blue-400/20 text-[#00c8ff] flex items-center justify-center text-base sm:text-lg flex-shrink-0">
+            <i class="fa-solid fa-handshake-angle"></i>
+          </div>
+          <div>
+            <div class="text-xl sm:text-3xl font-black text-white leading-none">200+</div>
+            <div class="text-[11px] sm:text-xs text-slate-300 font-medium mt-1 leading-tight">Happy Clients</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-500/10 border border-blue-400/20 text-[#00c8ff] flex items-center justify-center text-base sm:text-lg flex-shrink-0">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <div>
+            <div class="text-xl sm:text-3xl font-black text-white leading-none">500+</div>
+            <div class="text-[11px] sm:text-xs text-slate-300 font-medium mt-1 leading-tight">Successful Projects</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-500/10 border border-blue-400/20 text-[#00c8ff] flex items-center justify-center text-base sm:text-lg flex-shrink-0">
+            <i class="fa-solid fa-user-shield"></i>
+          </div>
+          <div>
+            <div class="text-xl sm:text-3xl font-black text-white leading-none">50+</div>
+            <div class="text-[11px] sm:text-xs text-slate-300 font-medium mt-1 leading-tight">Certified Experts</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= 4. OUR STORY & MISSION ================= -->
+  <section class="py-14 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        
+        <div class="lg:col-span-6 space-y-4 sm:space-y-5">
+          <span class="text-xs font-bold uppercase tracking-wider text-[#0084d6] block">
+            OUR PURPOSE &amp; VISION
+          </span>
+          <h2 class="text-2xl sm:text-3xl lg:text-[34px] font-black text-[#091124] leading-tight">
+            Bridging High-Tech Engineering Software with Real Shop-Floor Impact
+          </h2>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Founded with a vision to empower Indian manufacturers with state-of-the-art engineering technology, NXG Hightech has grown into one of North India’s premier Siemens Digital Industries Software Channel Partners.
+          </p>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            We don't just supply genuine Siemens software licenses; we become your engineering co-pilot. From setting up complex 5-axis post-processors and developing automated mold design macros, to orchestrating multi-site Teamcenter PLM rollouts and conducting multi-physics CFD simulations, our certified domain experts ensure your engineering investment yields measurable business outcomes.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-3">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-[#0084d6] flex items-center justify-center text-sm mb-2 font-bold">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <h4 class="text-sm font-bold text-slate-900 mb-1">Our Mission</h4>
+              <p class="text-[11px] text-slate-500 leading-relaxed">To empower Indian engineering enterprises to design better, manufacture smarter, and bring innovations to market faster.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
+              <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-600 flex items-center justify-center text-sm mb-2 font-bold">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <h4 class="text-sm font-bold text-slate-900 mb-1">Our Vision</h4>
+              <p class="text-[11px] text-slate-500 leading-relaxed">To be the most valued and trusted Siemens digital transformation partner across manufacturing and tooling hubs nationwide.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 space-y-4">
+          <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-xl">
+            <img src="assets/engineering_cad_main.jpg" alt="NXG Hightech Engineering Innovation" class="w-full h-72 sm:h-80 object-cover">
+          </div>
+          <div class="bg-gradient-to-r from-[#0084d6] to-[#005c99] text-white p-5 rounded-2xl shadow-lg flex items-center justify-between">
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wider text-cyan-200">Official Channel Partner</div>
+              <div class="text-base sm:text-lg font-black mt-0.5">Siemens Digital Industries Software</div>
+            </div>
+            <img src="assets/logos/siemens.svg" alt="Siemens" class="h-6 w-auto brightness-0 invert opacity-90">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= 5. CORE CAPABILITIES ================= -->
+  <section class="py-14 sm:py-20 bg-[#040817] text-white border-b border-slate-800">
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-3">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#00c8ff] block">
+          WHY WORK WITH NXG HIGHTECH
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight">
+          Comprehensive Engineering Services Under One Roof
+        </h2>
+        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+          From software procurement to complex digital twin implementation, our team delivers complete end-to-end support.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <div class="bg-[#081329] border border-slate-800 hover:border-[#0084d6] p-6 rounded-2xl transition duration-300 space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-400/20 text-[#00c8ff] flex items-center justify-center text-xl">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">Genuine Software Licensing</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Direct access to official Siemens DISW software licenses, maintenance updates, security patches, and subscription flex packages.
+          </p>
+        </div>
+
+        <div class="bg-[#081329] border border-slate-800 hover:border-[#0084d6] p-6 rounded-2xl transition duration-300 space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-400/25 text-[#00c8ff] flex items-center justify-center text-xl">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">Post-Processor Development</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Custom-built 3-axis to 5-axis post-processors for Fanuc, Heidenhain, Siemens 840D, and Mazak controllers with full collision simulation.
+          </p>
+        </div>
+
+        <div class="bg-[#081329] border border-slate-800 hover:border-[#0084d6] p-6 rounded-2xl transition duration-300 space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-400/20 text-[#00c8ff] flex items-center justify-center text-xl">
+            <i class="fa-solid fa-sitemap"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">Teamcenter PLM Deployment</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Turnkey Teamcenter implementation, CAD integrations (NX, SolidWorks, CATIA), multi-BOM synchronization, and engineering change management.
+          </p>
+        </div>
+
+        <div class="bg-[#081329] border border-slate-800 hover:border-[#0084d6] p-6 rounded-2xl transition duration-300 space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-400/25 text-[#00c8ff] flex items-center justify-center text-xl">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h4 class="text-base font-bold text-white">Onsite &amp; Remote Technical AMC</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Prompt dedicated technical support desk, annual maintenance agreements (AMC), on-site troubleshooting, and advanced user workshops.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= 6. REGIONAL COVERAGE & HEADQUARTERS ================= -->
+  <section class="py-14 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-5 space-y-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-[#0084d6] block">
+            OUR LOCATIONS &amp; COVERAGE
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-black text-[#091124] leading-tight">
+            Strategically Positioned to Support India's Manufacturing Hubs
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Operating from our state-of-the-art facility in Greater Noida West (Golden-I), NXG Hightech provides on-site implementation, training, and technical consultation across key industrial belts:
+          </p>
+
+          <div class="space-y-3 pt-2 text-xs text-slate-700">
+            <div class="flex items-start gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200">
+              <i class="fa-solid fa-location-dot text-[#0084d6] text-base mt-0.5"></i>
+              <div>
+                <strong class="text-slate-900 block text-xs">Registered Corporate Office</strong>
+                <span class="text-slate-500">827, T3, Golden-I, Tech Zone IV, Greater Noida West, UP - 201009</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200">
+              <i class="fa-solid fa-map text-[#0084d6] text-base mt-0.5"></i>
+              <div>
+                <strong class="text-slate-900 block text-xs">North India Regional Hubs</strong>
+                <span class="text-slate-500">Delhi NCR, Noida, Gurgaon, Manesar, Faridabad, Ghaziabad, Ludhiana, Chandigarh, Baddi, and Kanpur</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 p-3 bg-slate-50 rounded-xl border border-slate-200">
+              <i class="fa-solid fa-phone text-[#0084d6] text-base mt-0.5"></i>
+              <div>
+                <strong class="text-slate-900 block text-xs">Direct Support Lines</strong>
+                <span class="text-slate-500">+91 95400 94200 / +91 98186 72929</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="contact-us.html" class="inline-flex items-center gap-2 bg-[#0084d6] hover:bg-[#0074be] text-white text-xs sm:text-sm font-bold px-6 py-2.5 rounded-full transition active:scale-95 shadow-md">
+              <span>View Contact Details</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="bg-slate-900 text-white rounded-3xl p-7 sm:p-9 border border-slate-800 shadow-2xl relative overflow-hidden">
+            <div class="absolute inset-0 bg-hero-pattern opacity-20 pointer-events-none"></div>
+            <div class="relative z-10 space-y-6">
+              <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-[#00c8ff]">The NXG Advantage</span>
+                <h3 class="text-xl sm:text-2xl font-black mt-1">Authorized Siemens Digital Industries Software Channel Partner</h3>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-300">
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-[#00c8ff]"></i>
+                  <span>100% Genuine Siemens Software</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-[#00c8ff]"></i>
+                  <span>Siemens Certified Engineers</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-[#00c8ff]"></i>
+                  <span>Guaranteed Implementation SLA</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-[#00c8ff]"></i>
+                  <span>Custom Tooling &amp; CAM Post-Processors</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-[#00c8ff]"></i>
+                  <span>Official Siemens User Certification</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                  <i class="fa-solid fa-check text-[#00c8ff]"></i>
+                  <span>Dedicated Account Manager</span>
+                </div>
+              </div>
+              <div class="pt-2 border-t border-slate-800 flex items-center justify-between">
+                <span class="text-xs text-slate-400">Ready to consult with our engineering specialists?</span>
+                <button onclick="openExpertModal()" class="text-xs font-bold text-[#00c8ff] hover:text-white transition flex items-center gap-1.5">
+                  <span>Schedule Consultation</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= 12. ENTERPRISE FOOTER ================= -->
+    <!-- ================= 12. ENTERPRISE FOOTER ================= -->
+  <footer class="bg-[#030712] text-slate-400 pt-14 pb-8 border-t border-slate-800">
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-12 gap-6 sm:gap-8 pb-12 border-b border-slate-800">
+        
+        <!-- Col 1: NXG Brand Info (Full width on mobile, 4 cols on desktop) -->
+        <div class="col-span-2 lg:col-span-4 space-y-4">
+          <a href="index.html" class="flex items-center gap-2.5">
+            <img src="assets/site_logo.png" alt="NXG HIGHTECH" class="h-9 w-auto object-contain">
+            <div class="flex flex-col">
+              <span class="text-base sm:text-lg font-black tracking-wide text-white leading-none">NXG HIGHTECH</span>
+              <span class="text-[9px] font-bold tracking-widest text-[#0084d6] uppercase mt-0.5">SIEMENS SOLUTION PARTNER</span>
+            </div>
+          </a>
+          <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+            NXG Hightech is an authorised channel partner for Siemens Digital Industries Software, delivering engineering and manufacturing solutions to help businesses design better, manufacture smarter and innovate faster.
+          </p>
+          
+          <!-- Social Media Icons -->
+          <div class="flex items-center gap-2.5 pt-1">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="w-7 h-7 rounded-lg bg-[#0077b5] text-white flex items-center justify-center text-xs hover:opacity-90 transition shadow-sm" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://youtube.com/@nxghightech" target="_blank" rel="noreferrer" class="w-7 h-7 rounded-lg bg-[#ff0000] text-white flex items-center justify-center text-xs hover:opacity-90 transition shadow-sm" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" class="w-7 h-7 rounded-lg bg-[#1877f2] text-white flex items-center justify-center text-xs hover:opacity-90 transition shadow-sm" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" class="w-7 h-7 rounded-lg bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 text-white flex items-center justify-center text-xs hover:opacity-90 transition shadow-sm" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-span-1 lg:col-span-2">
+          <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="index.html#solutions" class="hover:text-white transition">Solutions</a></li>
+            <li><a href="index.html#industries" class="hover:text-white transition">Industries</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+            <li><a href="events.html" class="hover:text-white transition">Events &amp; Forum</a></li>
+            <li><a href="index.html#blog" class="hover:text-white transition">Blog</a></li>
+            <li><a href="contact-us.html" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Our Solutions -->
+        <div class="col-span-1 lg:col-span-2">
+          <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Our Solutions</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="nx-ug.html" class="hover:text-white transition">NX CAD</a></li>
+            <li><a href="nx-ug.html#cam" class="hover:text-white transition">NX CAM</a></li>
+            <li><a href="teamcenter.html" class="hover:text-white transition">Teamcenter</a></li>
+            <li><a href="solid-edge.html" class="hover:text-white transition">Solid Edge</a></li>
+            <li><a href="star-ccm.html" class="hover:text-white transition">Simcenter</a></li>
+            <li><a href="star-ccm.html" class="hover:text-white transition">Star-CCM+</a></li>
+            <li><a href="flotherm-xt.html" class="hover:text-white transition">FloTHERM XT</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Tecnomatix</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Our Services -->
+        <div class="col-span-1 lg:col-span-2">
+          <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Our Services</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="services.html" class="hover:text-white transition">Software Sales &amp; Support</a></li>
+            <li><a href="teamcenter.html" class="hover:text-white transition">Implementation</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Data Migration</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Engineering Consulting</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Training &amp; Support</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Customization</a></li>
+            <li><a href="contact-us.html" class="hover:text-white transition">Technical Support</a></li>
+            <li><a href="contact-us.html" class="hover:text-white transition">AMC</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Contact Us -->
+        <div class="col-span-1 sm:col-span-2 lg:col-span-2">
+          <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Contact Us</h4>
+          <ul class="space-y-3 text-xs">
+            <li>
+              <a href="tel:+919818672929" class="hover:text-white transition flex items-center gap-2.5">
+                <i class="fa-solid fa-phone text-[#0084d6] text-xs"></i>
+                <span class="font-medium">+91-981-867-2929</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@nxghightech.com" class="hover:text-white transition flex items-center gap-2.5">
+                <i class="fa-solid fa-envelope text-[#0084d6] text-xs"></i>
+                <span>info@nxghightech.com</span>
+              </a>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-location-dot text-[#0084d6] text-xs mt-0.5"></i>
+              <span class="leading-relaxed">827, T3, Golden-I, Tech Zone IV,<br>Greater Noida West, UP, India</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-2">
+        <p>© 2024 NXG Hightech (P) Ltd. All Rights Reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="contact-us.html" class="hover:text-slate-300 transition">Privacy Policy</a>
+          <span>|</span>
+          <a href="contact-us.html" class="hover:text-slate-300 transition">Terms of Service</a>
+          <span>|</span>
+          <a href="contact-us.html" class="hover:text-slate-300 transition">Support</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" aria-label="Back to Top" class="fixed bottom-6 right-6 w-9 h-9 rounded-full bg-[#0084d6] hover:bg-[#0074be] text-white shadow-xl flex items-center justify-center transition-all duration-300 z-40 opacity-0 translate-y-6 pointer-events-none">
+    <i class="fa-solid fa-arrow-up text-xs"></i>
+  </button>
+
+  <!-- Talk to an Expert Modal -->
+  <div id="expertModal" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white border border-slate-200 w-full max-w-lg rounded-2xl p-6 sm:p-7 shadow-2xl relative animate-scaleUp">
+      <button onclick="closeExpertModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="mb-5">
+        <span class="text-[10px] uppercase font-bold tracking-widest text-[#0084d6]">Siemens Certified Partner</span>
+        <h3 class="text-xl font-extrabold text-slate-900 mt-0.5">Talk to a Siemens Solutions Expert</h3>
+        <p class="text-slate-500 text-xs mt-1">Get genuine Siemens DISW software licensing, implementation timelines, and technical consultation.</p>
+      </div>
+
+      <form id="expertForm" class="space-y-3.5" onsubmit="handleExpertSubmit(event)">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-[11px] font-semibold text-slate-700 mb-1">Full Name *</label>
+            <input type="text" required placeholder="John Doe" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+          </div>
+          <div>
+            <label class="block text-[11px] font-semibold text-slate-700 mb-1">Work Email *</label>
+            <input type="email" required placeholder="name@company.com" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-[11px] font-semibold text-slate-700 mb-1">Phone Number *</label>
+            <input type="tel" required placeholder="+91 95400 94200" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+          </div>
+          <div>
+            <label class="block text-[11px] font-semibold text-slate-700 mb-1">Company / Location</label>
+            <input type="text" placeholder="e.g. Noida / Gurgaon / Delhi" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-semibold text-slate-700 mb-1">Solution of Interest</label>
+          <select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+            <option value="NX CAD">Siemens NX CAD (Product Design / Mold Wizard)</option>
+            <option value="NX CAM">Siemens NX CAM &amp; Post-Processor Development</option>
+            <option value="Teamcenter">Teamcenter PLM Implementation</option>
+            <option value="Simcenter">Simcenter STAR-CCM+ / FloTHERM XT</option>
+            <option value="Solid Edge">Solid Edge 3D CAD</option>
+            <option value="Data Migration">Legacy CAD Data Migration</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-semibold text-slate-700 mb-1">Requirement / Notes</label>
+          <textarea rows="2" placeholder="Tell us about your team size, CAD migration goals, or software licenses..." class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-[#0084d6] hover:bg-[#0074be] text-white font-bold py-2.5 rounded-lg shadow transition text-xs">
+          Schedule Free Consultation →
+        </button>
+      </form>
+      
+      <div id="expertSuccess" class="hidden text-center py-6">
+        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-2 text-xl">
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <h4 class="text-base font-bold text-slate-900">Thank You!</h4>
+        <p class="text-slate-500 text-xs mt-1">Our Siemens Certified Specialist will contact you shortly.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

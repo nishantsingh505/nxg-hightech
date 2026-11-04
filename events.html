@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Siemens Tech Forum & Events | NXG Hightech</title>
-  <meta name="description" content="Siemens PLM-NX Tech Forum 2024 India organized by NXG Hightech Team - Innovation with NX & Data Management with Teamcenter.">
+  <title>Siemens Tech Forum & Events 2024-2025 | NXG Hightech</title>
+  <meta name="description" content="Join Siemens PLM-NX Tech Forum India and technical masterclasses organized by NXG Hightech. Explore CAD/CAM automation, Teamcenter PLM, and Simcenter CFD. Register online now.">
 
   <!-- Google Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -25,7 +25,7 @@
             brandDark: '#060b18',
             brandNavy: '#071022',
             brandCyan: '#00c8ff',
-            cardDark: '#081329',
+            cardDark: '#060c1d',
             siemensTeal: '#00a3a6',
           },
           fontFamily: {
@@ -38,10 +38,15 @@
 
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  </style>
 </head>
-<body class="bg-white text-slate-800 font-sans antialiased overflow-x-hidden selection:bg-[#0084d6] selection:text-white">
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-[#0084d6] selection:text-white">
 
-  <!-- ================= 1. HEADER / NAVBAR ================= -->
+  <!-- ================= 1. TOP NAVBAR ================= -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all duration-200 shadow-sm" id="mainHeader">
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
       <div class="flex items-center justify-between h-16 sm:h-[76px]">
@@ -55,10 +60,10 @@
           </div>
         </a>
 
-        <!-- Desktop Navigation: Home, About, Solutions, Industries, Services, Resources, Contact -->
+        <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center gap-6 xl:gap-8">
-          <a href="index.html" class="text-[#0084d6] font-bold border-b-2 border-[#0084d6] pb-1 text-sm">Home</a>
-          <a href="#about" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">About</a>
+          <a href="index.html" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">Home</a>
+          <a href="about.html" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">About</a>
 
           <!-- Solutions Dropdown -->
           <div class="relative dropdown group py-2">
@@ -119,12 +124,12 @@
               <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-[#0084d6] transition-transform group-hover:rotate-180"></i>
             </button>
             <div class="dropdown-menu absolute top-full left-0 hidden w-56 bg-white border border-slate-200 rounded-xl shadow-xl py-2 z-50">
-              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Mold-Tool-Die</a>
-              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Automotive & EV</a>
-              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Consumer Goods</a>
-              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Plastic Components</a>
-              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Medical Devices</a>
-              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Sheet Metal & Machinery</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Automotive & EV</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Aerospace & Defense</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Industrial Machinery</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Consumer Products</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Energy & Utilities</a>
+              <a href="index.html#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Medical Devices</a>
             </div>
           </div>
 
@@ -143,14 +148,14 @@
             </div>
           </div>
 
-          <!-- Resources Dropdown -->
+          <!-- Resources Dropdown (Active) -->
           <div class="relative dropdown group py-2">
-            <button class="flex items-center gap-1 text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">
+            <button class="flex items-center gap-1 text-[#0084d6] font-bold border-b-2 border-[#0084d6] pb-1 text-sm">
               <span>Resources</span>
-              <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-[#0084d6] transition-transform group-hover:rotate-180"></i>
+              <i class="fa-solid fa-chevron-down text-[10px] text-[#0084d6] transition-transform group-hover:rotate-180"></i>
             </button>
             <div class="dropdown-menu absolute top-full left-0 hidden w-52 bg-white border border-slate-200 rounded-xl shadow-xl py-2 z-50">
-              <a href="events.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Events & Tech Forum</a>
+              <a href="events.html" class="block px-4 py-2 text-xs text-[#0084d6] font-bold bg-slate-50">Events & Tech Forum</a>
               <a href="event-registration.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Event Registration</a>
             </div>
           </div>
@@ -158,11 +163,11 @@
           <a href="contact-us.html" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">Contact</a>
         </nav>
 
-        <!-- Right Side: Search & CTA Button (Exact Oval Match) -->
+        <!-- Right Side: Search & CTA Button -->
         <div class="flex items-center gap-2 sm:gap-3.5">
-          <button onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})" class="p-1.5 text-slate-500 hover:text-[#0084d6] transition text-sm sm:text-base flex-shrink-0" title="Search Solutions">
+          <a href="index.html#solutions" class="p-1.5 text-slate-500 hover:text-[#0084d6] transition text-sm sm:text-base flex-shrink-0" title="Search Solutions">
             <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
+          </a>
           
           <!-- Desktop CTA -->
           <button onclick="openExpertModal()" class="hidden sm:inline-flex items-center gap-2 bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-xs sm:text-sm font-bold px-5 sm:px-6 py-2.5 rounded-full shadow-md shadow-blue-500/20 transition whitespace-nowrap">
@@ -170,7 +175,7 @@
             <i class="fa-solid fa-arrow-right text-[11px]"></i>
           </button>
 
-          <!-- Mobile Compact Oval Button (Exact Match to User Screenshot) -->
+          <!-- Mobile Compact Oval Button -->
           <button onclick="openExpertModal()" class="sm:hidden flex flex-col items-center justify-center bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-[10px] font-bold w-[74px] h-[50px] rounded-full shadow-md shadow-blue-500/25 leading-tight flex-shrink-0">
             <span>Talk to</span>
             <span class="inline-flex items-center gap-1">an <i class="fa-solid fa-arrow-right text-[8px]"></i></span>
@@ -186,16 +191,16 @@
       </div>
     </div>
 
-    <!-- Mobile Navigation Drawer (Modern Slide-Down with Icons & Quick Actions) -->
+    <!-- Mobile Navigation Drawer -->
     <div id="mobileMenu" class="hidden lg:hidden bg-white/98 backdrop-blur-xl border-b border-slate-200 px-5 py-4 shadow-2xl transition-all duration-300">
       <div class="flex flex-col gap-1 text-xs sm:text-sm font-semibold divide-y divide-slate-100">
         <div class="py-1.5 flex flex-col gap-1">
-          <a href="index.html" class="mobile-nav-link flex items-center justify-between text-[#0084d6] bg-blue-50/70 px-3 py-2 rounded-lg font-bold">
+          <a href="index.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
             <span class="flex items-center gap-2.5"><i class="fa-solid fa-house w-4"></i> Home</span>
-            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+            <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
           </a>
-          <a href="#about" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
-            <span class="flex items-center gap-2.5"><i class="fa-solid fa-building w-4 text-slate-400"></i> About NXG</span>
+          <a href="about.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-building w-4"></i> About NXG</span>
             <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
           </a>
         </div>
@@ -225,7 +230,7 @@
         </div>
 
         <div class="py-2 flex flex-col gap-1">
-          <a href="events.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
+          <a href="events.html" class="mobile-nav-link flex items-center justify-between text-[#0084d6] bg-blue-50/70 px-3 py-2 rounded-lg font-bold">
             <span class="flex items-center gap-2.5"><i class="fa-solid fa-calendar-days text-[#0084d6] w-4"></i> Events & Tech Forum</span>
             <span class="text-[9px] bg-cyan-100 text-[#0084d6] font-bold px-2 py-0.5 rounded-full">Upcoming</span>
           </a>
@@ -245,99 +250,439 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative bg-[#060b18] text-white pt-14 pb-16 overflow-hidden">
-    <div class="absolute inset-0 bg-hero-pattern pointer-events-none opacity-20"></div>
-    <div class="max-w-[1240px] mx-auto px-4 sm:px-6 relative z-10">
-      <div class="max-w-2xl space-y-4">
-        <span class="inline-block text-[11px] font-bold tracking-[0.16em] uppercase text-cyan-400">
-          COMMUNITY & KNOWLEDGE SHARING
-        </span>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
-          Siemens PLM-NX: Tech Forum India
-        </h1>
-        <p class="text-slate-300 text-sm leading-relaxed max-w-xl font-normal">
-          Connecting manufacturing leaders, tooling designers, and CNC programmers across North India to explore breakthrough innovations in CAD, CAM, and PLM.
-        </p>
-        <div class="flex flex-wrap items-center gap-3 pt-2">
-          <a href="event-registration.html" class="inline-flex items-center gap-2 bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-xs font-semibold px-6 py-3 rounded-full transition shadow-md shadow-blue-500/20">
-            <span>Register for Upcoming Events</span>
-            <i class="fa-solid fa-arrow-right text-[10px]"></i>
-          </a>
+
+  <!-- ================= 2. HERO SECTION ================= -->
+  <section class="relative bg-[#060f22] text-white pt-12 sm:pt-20 pb-14 sm:pb-20 overflow-hidden">
+    <div class="absolute inset-0 bg-hero-pattern opacity-30 pointer-events-none"></div>
+    <div class="absolute -top-32 -left-32 w-80 h-80 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -right-32 w-80 h-80 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-4 sm:space-y-6">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-400/25 text-[#00c8ff] text-[9.5px] sm:text-[11px] font-bold tracking-wider uppercase">
+            <span>ANNUAL ENGINEERING KNOWLEDGE FORUM &amp; WORKSHOPS</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-[46px] font-black text-white leading-[1.12] tracking-tight">
+            Siemens PLM-NX:<br>
+            <span class="text-[#00c8ff]">Tech Forum India</span><br>
+            2024 - 2025.
+          </h1>
+
+          <p class="text-slate-300 text-xs sm:text-sm leading-relaxed max-w-xl">
+            Connecting engineering directors, mold-tooling design leads, and manufacturing innovators across North India. Experience live demonstrations of Siemens NX CAD/CAM automation, Teamcenter PLM, and Simcenter digital twins.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-3 pt-2">
+            <a href="#register" class="inline-flex items-center justify-center gap-2 bg-[#0084d6] hover:bg-[#0074be] text-white text-xs sm:text-sm font-bold px-6 py-3 rounded-full transition shadow-lg shadow-blue-500/30 active:scale-95">
+              <span>Register Now (Free Pass)</span>
+              <i class="fa-solid fa-arrow-down text-[10px]"></i>
+            </a>
+            <a href="#agenda" class="inline-flex items-center justify-center border border-white/30 hover:border-white text-white hover:bg-white/10 text-xs sm:text-sm font-semibold px-5 py-3 rounded-full transition">
+              <span>View Agenda</span>
+            </a>
+          </div>
+
+          <div class="flex items-center gap-6 pt-4 text-xs text-slate-400 border-t border-slate-800">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-location-dot text-[#00c8ff]"></i>
+              <span>Delhi NCR &amp; Virtual Stream</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-users text-[#00c8ff]"></i>
+              <span>250+ Industry Delegates</span>
+            </div>
+          </div>
         </div>
+
+        <div class="lg:col-span-5 relative flex items-center justify-center">
+          <div class="w-full rounded-2xl overflow-hidden border border-blue-500/30 shadow-2xl bg-[#071329] p-1.5">
+            <img src="assets/hero_visual.png" alt="Siemens PLM Tech Forum India" class="w-full h-auto object-cover rounded-xl">
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Forum Highlights Recap -->
-  <section class="py-16 bg-white border-b border-slate-100">
-    <div class="max-w-[1240px] mx-auto px-4 sm:px-6">
-      <div class="bg-slate-50 border border-slate-200 rounded-3xl p-8 sm:p-12 mb-12">
-        <span class="text-xs font-bold text-[#0084d6] uppercase tracking-wider">Event Highlights</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-          Tech Forum 2024: "Innovation with NX & Data Management with Teamcenter"
-        </h2>
-        <p class="text-slate-600 text-sm leading-relaxed mt-4 max-w-3xl">
-          We take this opportunity to thank all esteemed participants for attending the <strong>Siemens PLM-NX: Tech Forum 2024 India</strong> organized by the NXG Hightech Team and making it a grand success. As we revisit the event, we are proud to share some key takeaways and memories with our engineering community.
-        </p>
+
+  <!-- ================= 3. FEATURED EVENT HIGHLIGHTS ================= -->
+  <section class="py-14 sm:py-20 bg-white border-b border-slate-200">
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
+      
+      <div class="bg-gradient-to-br from-slate-50 to-blue-50/40 border border-slate-200 rounded-3xl p-6 sm:p-12 mb-14 shadow-sm">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start justify-between">
+          <div class="max-w-2xl space-y-3">
+            <span class="text-xs font-bold text-[#0084d6] uppercase tracking-wider block">Recap &amp; Highlights</span>
+            <h2 class="text-2xl sm:text-3xl font-black text-slate-900 leading-tight">
+              Tech Forum 2024: "Innovation with NX &amp; Data Management with Teamcenter"
+            </h2>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              We extend our gratitude to all esteemed participants from automotive OEMs, Tier-1 die &amp; mold suppliers, and consumer durable manufacturers for attending the <strong>Siemens PLM-NX: Tech Forum India</strong> organized by NXG Hightech. Here are key insights from this year's technical presentations:
+            </p>
+          </div>
+          <div class="flex-shrink-0">
+            <a href="#register" class="inline-flex items-center gap-2 bg-[#0084d6] hover:bg-[#0074be] text-white text-xs sm:text-sm font-bold px-6 py-3 rounded-full transition shadow-md active:scale-95">
+              <span>Reserve 2025 Seat</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-          <div class="bg-white p-5 rounded-2xl border border-slate-200">
-            <h4 class="font-bold text-slate-900 text-sm">Automated Mold Wizard</h4>
-            <p class="text-xs text-slate-500 mt-1">Live demonstration of reducing tooling design time by 40% with automated parting lines and standard component libraries.</p>
+          <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+            <div class="w-10 h-10 rounded-xl bg-blue-50 text-[#0084d6] flex items-center justify-center text-lg mb-3">
+              <i class="fa-solid fa-cube"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm mb-1.5">Automated Mold Wizard</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Demonstrated 40% cycle time reduction in injection mold design using automated parting line creation, core/cavity splitting, and standardized mold base integration.
+            </p>
           </div>
-          <div class="bg-white p-5 rounded-2xl border border-slate-200">
-            <h4 class="font-bold text-slate-900 text-sm">5-Axis Post-Processing</h4>
-            <p class="text-xs text-slate-500 mt-1">Machine simulation and digital twin prove-out on multi-axis CNC machines preventing shop floor collisions.</p>
+
+          <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+            <div class="w-10 h-10 rounded-xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-lg mb-3">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm mb-1.5">5-Axis ISV Simulation</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Integrated Simulation and Verification (ISV) proves out G-code on a virtual digital twin of the CNC machine before cutting metal, eliminating costly collisions.
+            </p>
           </div>
-          <div class="bg-white p-5 rounded-2xl border border-slate-200">
-            <h4 class="font-bold text-slate-900 text-sm">Teamcenter BOM Management</h4>
-            <p class="text-xs text-slate-500 mt-1">Streamlining engineering change workflows and establishing digital thread continuity across cross-functional teams.</p>
+
+          <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg mb-3">
+              <i class="fa-solid fa-sitemap"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 text-sm mb-1.5">Teamcenter BOM Digital Thread</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Demonstrated closed-loop engineering change management (ECR/ECO) connecting CAD designers with procurement and shop floor operators in real time.
+            </p>
           </div>
         </div>
       </div>
 
-      <!-- Upcoming Sessions -->
-      <div>
-        <h3 class="text-xl font-bold text-slate-900 mb-6">Upcoming Technical Masterclasses</h3>
+      <!-- Upcoming Sessions Grid -->
+      <div id="agenda">
+        <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4 mb-8">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-[#0084d6] block mb-1">SCHEDULED SESSIONS</span>
+            <h3 class="text-2xl sm:text-3xl font-black text-slate-900">Upcoming Technical Masterclasses</h3>
+          </div>
+          <a href="#register" class="text-xs sm:text-sm font-bold text-[#0084d6] hover:underline flex items-center gap-1">
+            <span>Register for All Sessions</span>
+            <i class="fa-solid fa-arrow-down text-[10px]"></i>
+          </a>
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-[#0084d6] transition">
-            <div>
-              <span class="text-[10px] font-bold text-cyan-600 uppercase">Interactive Masterclass</span>
-              <h4 class="text-base font-bold text-slate-900 mt-1">NX Mold Wizard Automation for Injection Tooling</h4>
-              <p class="text-xs text-slate-600 mt-2">Hands-on walkthrough of automated core/cavity splitting, cooling circuits, and mold flow simulation.</p>
+          
+          <div class="border border-slate-200 rounded-2xl p-6 hover:border-[#0084d6] transition flex flex-col justify-between bg-white shadow-sm hover:shadow-md">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-bold text-cyan-600 uppercase bg-cyan-50 px-2.5 py-0.5 rounded-full border border-cyan-200">Interactive Masterclass</span>
+                <span class="text-xs text-slate-500 font-semibold"><i class="fa-solid fa-calendar text-[#0084d6] mr-1"></i> Upcoming</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-900">NX Mold Wizard Automation for Injection Tooling</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Step-by-step masterclass covering automated parting line analysis, lifters, sliders, conformal cooling channels, and mold base selection from HASCO and DME libraries.
+              </p>
             </div>
             <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-xs text-slate-500"><i class="fa-solid fa-calendar mr-1"></i> Upcoming</span>
-              <a href="event-registration.html" class="text-xs font-bold text-[#0084d6] hover:underline">Register Now →</a>
+              <span class="text-[11px] text-slate-500"><i class="fa-solid fa-clock text-slate-400 mr-1"></i> 2 Hours | Hands-On</span>
+              <a href="#register" class="text-xs font-bold text-[#0084d6] hover:text-[#006cb0] flex items-center gap-1">
+                <span>Register →</span>
+              </a>
             </div>
           </div>
 
-          <div class="border border-slate-200 rounded-2xl p-6 flex flex-col justify-between hover:border-[#0084d6] transition">
-            <div>
-              <span class="text-[10px] font-bold text-cyan-600 uppercase">Technical Webinar</span>
-              <h4 class="text-base font-bold text-slate-900 mt-1">FloTHERM XT: Electronics & AI Hardware Thermal Management</h4>
-              <p class="text-xs text-slate-600 mt-2">Addressing high-density thermal dissipation with SmartCell™ automated Cartesian CFD meshing.</p>
+          <div class="border border-slate-200 rounded-2xl p-6 hover:border-[#0084d6] transition flex flex-col justify-between bg-white shadow-sm hover:shadow-md">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-bold text-amber-600 uppercase bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">Technical Webinar</span>
+                <span class="text-xs text-slate-500 font-semibold"><i class="fa-solid fa-calendar text-[#0084d6] mr-1"></i> Upcoming</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-900">FloTHERM XT: Electronics &amp; AI Hardware Thermal Cooling</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Addressing high-density thermal dissipation challenges in EV powertrain ECUs and AI server chassis using FloTHERM XT SmartCell™ automated Cartesian meshing.
+              </p>
             </div>
             <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-xs text-slate-500"><i class="fa-solid fa-calendar mr-1"></i> Upcoming</span>
-              <a href="event-registration.html" class="text-xs font-bold text-[#0084d6] hover:underline">Register Now →</a>
+              <span class="text-[11px] text-slate-500"><i class="fa-solid fa-clock text-slate-400 mr-1"></i> 90 Mins | Online</span>
+              <a href="#register" class="text-xs font-bold text-[#0084d6] hover:text-[#006cb0] flex items-center gap-1">
+                <span>Register →</span>
+              </a>
             </div>
           </div>
+
+          <div class="border border-slate-200 rounded-2xl p-6 hover:border-[#0084d6] transition flex flex-col justify-between bg-white shadow-sm hover:shadow-md">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-bold text-blue-600 uppercase bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">Hands-on Workshop</span>
+                <span class="text-xs text-slate-500 font-semibold"><i class="fa-solid fa-calendar text-[#0084d6] mr-1"></i> Upcoming</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-900">5-Axis CNC Post-Processing &amp; ISV Simulation</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Learn how to develop reliable post-processors for complex multi-axis milling and mill-turn centers, verifying toolpaths inside NX before running on shop-floor machinery.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-[11px] text-slate-500"><i class="fa-solid fa-clock text-slate-400 mr-1"></i> 3 Hours | Lab Demo</span>
+              <a href="#register" class="text-xs font-bold text-[#0084d6] hover:text-[#006cb0] flex items-center gap-1">
+                <span>Register →</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="border border-slate-200 rounded-2xl p-6 hover:border-[#0084d6] transition flex flex-col justify-between bg-white shadow-sm hover:shadow-md">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-bold text-emerald-600 uppercase bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">Executive Briefing</span>
+                <span class="text-xs text-slate-500 font-semibold"><i class="fa-solid fa-calendar text-[#0084d6] mr-1"></i> Upcoming</span>
+              </div>
+              <h4 class="text-base font-bold text-slate-900">Teamcenter PLM: Cloud Migration &amp; Multi-CAD Unification</h4>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Executive session on legacy CAD data migration, BOM reconciliation across mechanical/electrical domains, and deploying Teamcenter X on cloud infrastructure.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+              <span class="text-[11px] text-slate-500"><i class="fa-solid fa-clock text-slate-400 mr-1"></i> 90 Mins | Hybrid</span>
+              <a href="#register" class="text-xs font-bold text-[#0084d6] hover:text-[#006cb0] flex items-center gap-1">
+                <span>Register →</span>
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
 
     </div>
   </section>
 
-    <!-- ================= 12. ENTERPRISE FOOTER (EXACT MATCH) ================= -->
+
+  <!-- ================= 4. FORUM AGENDA TIMELINE ================= -->
+  <section class="py-14 sm:py-20 bg-[#040817] text-white border-b border-slate-800">
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16 space-y-3">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#00c8ff] block">
+          FORUM ITINERARY
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight">
+          Full-Day Technical Agenda
+        </h2>
+        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+          Designed for engineering executives, CAD managers, tooling specialists, and manufacturing heads.
+        </p>
+      </div>
+
+      <div class="max-w-3xl mx-auto space-y-4">
+        
+        <div class="bg-[#081329] p-4 sm:p-5 rounded-2xl border border-slate-800 flex items-start gap-4">
+          <div class="bg-blue-500/10 border border-blue-400/20 text-[#00c8ff] px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap">
+            09:30 AM
+          </div>
+          <div>
+            <h4 class="text-sm sm:text-base font-bold text-white">Registration, Delegate Badge Collection &amp; Networking Breakfast</h4>
+            <p class="text-xs text-slate-400 mt-1">Check-in at the registration desk, collect your delegate kit, and network with fellow engineering heads.</p>
+          </div>
+        </div>
+
+        <div class="bg-[#081329] p-4 sm:p-5 rounded-2xl border border-slate-800 flex items-start gap-4">
+          <div class="bg-cyan-500/10 border border-cyan-400/25 text-[#00c8ff] px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap">
+            10:00 AM
+          </div>
+          <div>
+            <h4 class="text-sm sm:text-base font-bold text-white">Inaugural Keynote: Siemens Xcelerator for Indian Industry 4.0</h4>
+            <p class="text-xs text-slate-400 mt-1">Presentation by Siemens Digital Industries Software leadership and NXG Hightech executives on emerging digital manufacturing trends.</p>
+          </div>
+        </div>
+
+        <div class="bg-[#081329] p-4 sm:p-5 rounded-2xl border border-slate-800 flex items-start gap-4">
+          <div class="bg-blue-500/10 border border-blue-400/20 text-[#00c8ff] px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap">
+            11:15 AM
+          </div>
+          <div>
+            <h4 class="text-sm sm:text-base font-bold text-white">Deep-Dive: Accelerating Tooling Design with Siemens NX Mold Wizard</h4>
+            <p class="text-xs text-slate-400 mt-1">Live prove-out of mold base automation, parting surface calculation, and electrode design workflows.</p>
+          </div>
+        </div>
+
+        <div class="bg-[#081329] p-4 sm:p-5 rounded-2xl border border-slate-800 flex items-start gap-4">
+          <div class="bg-emerald-500/10 border border-emerald-400/25 text-emerald-400 px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap">
+            01:00 PM
+          </div>
+          <div>
+            <h4 class="text-sm sm:text-base font-bold text-white">Buffet Lunch &amp; Interactive Hands-on Tech Demo Pods</h4>
+            <p class="text-xs text-slate-400 mt-1">Explore live demo stations for FloTHERM XT, STAR-CCM+, Solid Edge, and 5-Axis CNC post-processors.</p>
+          </div>
+        </div>
+
+        <div class="bg-[#081329] p-4 sm:p-5 rounded-2xl border border-slate-800 flex items-start gap-4">
+          <div class="bg-blue-500/10 border border-blue-400/20 text-[#00c8ff] px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap">
+            02:15 PM
+          </div>
+          <div>
+            <h4 class="text-sm sm:text-base font-bold text-white">5-Axis CAM Optimization &amp; Digital Twin Machine Prove-Out</h4>
+            <p class="text-xs text-slate-400 mt-1">High-speed roughing strategies, adaptive milling, collision detection, and custom macro development.</p>
+          </div>
+        </div>
+
+        <div class="bg-[#081329] p-4 sm:p-5 rounded-2xl border border-slate-800 flex items-start gap-4">
+          <div class="bg-cyan-500/10 border border-cyan-400/25 text-[#00c8ff] px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap">
+            03:45 PM
+          </div>
+          <div>
+            <h4 class="text-sm sm:text-base font-bold text-white">Teamcenter PLM: Enterprise BOM Collaboration &amp; Cloud Transition</h4>
+            <p class="text-xs text-slate-400 mt-1">Real-world customer case studies on CAD migration, change workflow approval cycles, and ERP integration.</p>
+          </div>
+        </div>
+
+        <div class="bg-[#081329] p-4 sm:p-5 rounded-2xl border border-slate-800 flex items-start gap-4">
+          <div class="bg-amber-500/10 border border-amber-400/25 text-amber-400 px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap">
+            04:45 PM
+          </div>
+          <div>
+            <h4 class="text-sm sm:text-base font-bold text-white">Interactive Q&amp;A, Certificate Distribution &amp; Closing High Tea</h4>
+            <p class="text-xs text-slate-400 mt-1">Open panel with certified Siemens application engineers, attendee feedback, and certificate handover.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= 5. EVENT REGISTRATION FORM SECTION (EMBEDDED) ================= -->
+  <section id="register" class="py-14 sm:py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-xl mx-auto mb-10 space-y-2">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#0084d6] block">
+          OFFICIAL REGISTRATION
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-900 leading-tight">
+          Register for Tech Forum &amp; Workshops
+        </h2>
+        <p class="text-slate-600 text-xs sm:text-sm">
+          Complimentary delegate entry for manufacturing engineering leaders, tooling heads, and technical specialists.
+        </p>
+      </div>
+
+      <div class="bg-white border border-slate-200 rounded-3xl p-7 sm:p-10 shadow-xl">
+        <form id="eventRegistrationForm" class="space-y-4" onsubmit="handleRegistrationSubmit(event)">
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Full Name *</label>
+              <input type="text" name="name" required placeholder="e.g. Rahul Sharma" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Company / Organization *</label>
+              <input type="text" name="company" required placeholder="e.g. Acme Precision Toolings Pvt Ltd" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Corporate Email Address *</label>
+              <input type="email" name="email" required placeholder="name@company.com" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Mobile / WhatsApp Number *</label>
+              <input type="tel" name="phone" required placeholder="+91 98765 43210" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Designation / Role *</label>
+              <input type="text" name="designation" required placeholder="e.g. Head of Tooling / Design Manager" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1">City / Location *</label>
+              <input type="text" name="city" required placeholder="e.g. Noida / Gurgaon / Ludhiana / Pune" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Select Event / Masterclass Track *</label>
+            <select name="eventTrack" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+              <option value="All-Access Pass: Siemens PLM-NX Tech Forum India">All-Access Pass: Siemens PLM-NX Tech Forum India (Full Day)</option>
+              <option value="Masterclass: NX Mold Wizard Automation for Injection Tooling">Masterclass: NX Mold Wizard Automation for Injection Tooling</option>
+              <option value="Workshop: 5-Axis CNC Post-Processing & ISV Machine Simulation">Workshop: 5-Axis CNC Post-Processing &amp; ISV Machine Simulation</option>
+              <option value="Webinar: FloTHERM XT AI & Electronics Thermal Management">Webinar: FloTHERM XT AI &amp; Electronics Thermal Management</option>
+              <option value="Executive Briefing: Teamcenter PLM Cloud Migration">Executive Briefing: Teamcenter PLM Cloud Migration</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Number of Delegates Attending</label>
+            <select name="delegates" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
+              <option value="1">1 Person (Individual Delegate)</option>
+              <option value="2">2 Persons (Engineering Duo)</option>
+              <option value="3-5">3 to 5 Persons (Department Team)</option>
+              <option value="5+">More than 5 Persons (Corporate Delegation)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Specific Topic or Question for Siemens Specialists</label>
+            <textarea name="notes" rows="3" placeholder="Tell us about your CAD/CAM challenges, machine controller types, or PLM goals..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]"></textarea>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" class="w-full bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-blue-500/25 transition text-xs sm:text-sm flex items-center justify-center gap-2">
+              <i class="fa-solid fa-id-badge"></i>
+              <span>Confirm Delegate Registration →</span>
+            </button>
+          </div>
+          
+          <p class="text-[11px] text-slate-400 text-center pt-1">
+            * Attendance is free of charge. Passes are issued subject to qualification and seat availability.
+          </p>
+        </form>
+
+        <!-- Success Confirmation Card -->
+        <div id="registrationSuccess" class="hidden text-center py-10 space-y-4">
+          <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-3xl shadow-sm">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h3 class="text-2xl font-black text-slate-900">Registration Confirmed!</h3>
+          <p class="text-xs text-slate-600 max-w-md mx-auto leading-relaxed">
+            Thank you for registering. Your delegate seat has been reserved. We have dispatched the event pass, agenda PDF, and venue Google Maps coordinates to your email address.
+          </p>
+          <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 max-w-md mx-auto text-left text-xs space-y-1">
+            <div><strong class="text-slate-800">Event:</strong> <span id="confirmedEventName">Siemens PLM-NX Tech Forum</span></div>
+            <div><strong class="text-slate-800">Delegate:</strong> <span id="confirmedDelegateName">Rahul Sharma</span></div>
+            <div><strong class="text-slate-800">Pass Status:</strong> <span class="text-emerald-600 font-bold">Approved &amp; Confirmed</span></div>
+          </div>
+          <div class="pt-2">
+            <a href="index.html" class="inline-flex items-center gap-2 text-xs font-bold text-[#0084d6] hover:underline">
+              <span>Return to Homepage</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================= 12. ENTERPRISE FOOTER ================= -->
+    <!-- ================= 12. ENTERPRISE FOOTER ================= -->
   <footer class="bg-[#030712] text-slate-400 pt-14 pb-8 border-t border-slate-800">
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
       
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 pb-12 border-b border-slate-800">
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-12 gap-6 sm:gap-8 pb-12 border-b border-slate-800">
         
-        <!-- Col 1: NXG Brand Info (lg:col-span-4) -->
-        <div class="lg:col-span-4 space-y-4">
+        <!-- Col 1: NXG Brand Info (Full width on mobile, 4 cols on desktop) -->
+        <div class="col-span-2 lg:col-span-4 space-y-4">
           <a href="index.html" class="flex items-center gap-2.5">
             <img src="assets/site_logo.png" alt="NXG HIGHTECH" class="h-9 w-auto object-contain">
             <div class="flex flex-col">
@@ -349,7 +694,7 @@
             NXG Hightech is an authorised channel partner for Siemens Digital Industries Software, delivering engineering and manufacturing solutions to help businesses design better, manufacture smarter and innovate faster.
           </p>
           
-          <!-- Social Media Icons (Exact Match Colors) -->
+          <!-- Social Media Icons -->
           <div class="flex items-center gap-2.5 pt-1">
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="w-7 h-7 rounded-lg bg-[#0077b5] text-white flex items-center justify-center text-xs hover:opacity-90 transition shadow-sm" aria-label="LinkedIn">
               <i class="fa-brands fa-linkedin-in"></i>
@@ -366,23 +711,23 @@
           </div>
         </div>
 
-        <!-- Col 2: Quick Links (lg:col-span-2) -->
-        <div class="lg:col-span-2">
+        <!-- Col 2: Quick Links -->
+        <div class="col-span-1 lg:col-span-2">
           <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Quick Links</h4>
           <ul class="space-y-2 text-xs">
             <li><a href="index.html" class="hover:text-white transition">Home</a></li>
-            <li><a href="#about" class="hover:text-white transition">About Us</a></li>
-            <li><a href="#solutions" class="hover:text-white transition">Solutions</a></li>
-            <li><a href="#industries" class="hover:text-white transition">Industries</a></li>
+            <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="index.html#solutions" class="hover:text-white transition">Solutions</a></li>
+            <li><a href="index.html#industries" class="hover:text-white transition">Industries</a></li>
             <li><a href="services.html" class="hover:text-white transition">Services</a></li>
-            <li><a href="events.html" class="hover:text-white transition">Resources</a></li>
-            <li><a href="#blog" class="hover:text-white transition">Blog</a></li>
+            <li><a href="events.html" class="hover:text-white transition">Events &amp; Forum</a></li>
+            <li><a href="index.html#blog" class="hover:text-white transition">Blog</a></li>
             <li><a href="contact-us.html" class="hover:text-white transition">Contact</a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Our Solutions (lg:col-span-2) -->
-        <div class="lg:col-span-2">
+        <!-- Col 3: Our Solutions -->
+        <div class="col-span-1 lg:col-span-2">
           <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Our Solutions</h4>
           <ul class="space-y-2 text-xs">
             <li><a href="nx-ug.html" class="hover:text-white transition">NX CAD</a></li>
@@ -396,8 +741,8 @@
           </ul>
         </div>
 
-        <!-- Col 4: Our Services (lg:col-span-2) -->
-        <div class="lg:col-span-2">
+        <!-- Col 4: Our Services -->
+        <div class="col-span-1 lg:col-span-2">
           <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Our Services</h4>
           <ul class="space-y-2 text-xs">
             <li><a href="services.html" class="hover:text-white transition">Software Sales &amp; Support</a></li>
@@ -411,8 +756,8 @@
           </ul>
         </div>
 
-        <!-- Col 5: Contact Us (lg:col-span-2) -->
-        <div class="lg:col-span-2">
+        <!-- Col 5: Contact Us -->
+        <div class="col-span-1 sm:col-span-2 lg:col-span-2">
           <h4 class="text-xs sm:text-sm font-bold text-white mb-4">Contact Us</h4>
           <ul class="space-y-3 text-xs">
             <li>
@@ -429,7 +774,7 @@
             </li>
             <li class="flex items-start gap-2.5">
               <i class="fa-solid fa-location-dot text-[#0084d6] text-xs mt-0.5"></i>
-              <span class="leading-relaxed">B-123, Sector 62,<br>Noida, Uttar Pradesh, India</span>
+              <span class="leading-relaxed">827, T3, Golden-I, Tech Zone IV,<br>Greater Noida West, UP, India</span>
             </li>
           </ul>
         </div>
@@ -452,7 +797,7 @@
   </footer>
 
   <!-- Floating Back to Top Button -->
-  <button id="backToTopBtn" aria-label="Back to Top" class="fixed bottom-6 right-6 w-9 h-9 rounded-full bg-[#0084d6] hover:bg-[#0074be] text-white shadow-xl flex items-center justify-center transition-all duration-300 z-40">
+  <button id="backToTopBtn" aria-label="Back to Top" class="fixed bottom-6 right-6 w-9 h-9 rounded-full bg-[#0084d6] hover:bg-[#0074be] text-white shadow-xl flex items-center justify-center transition-all duration-300 z-40 opacity-0 translate-y-6 pointer-events-none">
     <i class="fa-solid fa-arrow-up text-xs"></i>
   </button>
 
@@ -496,7 +841,7 @@
           <label class="block text-[11px] font-semibold text-slate-700 mb-1">Solution of Interest</label>
           <select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-[#0084d6]">
             <option value="NX CAD">Siemens NX CAD (Product Design / Mold Wizard)</option>
-            <option value="NX CAM">Siemens NX CAM & Post-Processor Development</option>
+            <option value="NX CAM">Siemens NX CAM &amp; Post-Processor Development</option>
             <option value="Teamcenter">Teamcenter PLM Implementation</option>
             <option value="Simcenter">Simcenter STAR-CCM+ / FloTHERM XT</option>
             <option value="Solid Edge">Solid Edge 3D CAD</option>
@@ -525,7 +870,21 @@
   </div>
 
   <script src="script.js"></script>
+  <script>
+    function handleRegistrationSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('eventRegistrationForm');
+      const success = document.getElementById('registrationSuccess');
+      const name = form.elements['name'].value;
+      const track = form.elements['eventTrack'].value;
 
+      document.getElementById('confirmedDelegateName').textContent = name;
+      document.getElementById('confirmedEventName').textContent = track;
+
+      form.classList.add('hidden');
+      success.classList.remove('hidden');
+      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
 </body>
-</html></body>
 </html>
