@@ -49,14 +49,14 @@
   <!-- ================= 1. TOP NAVBAR ================= -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all duration-200 shadow-sm" id="mainHeader">
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
-      <div class="flex items-center justify-between h-[76px]">
+      <div class="flex items-center justify-between h-16 sm:h-[76px]">
         
-        <!-- Official Logo: NXG HIGHTECH -->
-        <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
-          <img src="assets/site_logo.png" alt="NXG HIGHTECH Logo" class="h-10 sm:h-11 w-auto object-contain">
+        <!-- Official Logo: NXG HIGHTECH (Mobile Responsive) -->
+        <a href="index.html" class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+          <img src="assets/site_logo.png" alt="NXG HIGHTECH Logo" class="h-8 sm:h-11 w-auto object-contain">
           <div class="flex flex-col">
-            <span class="text-lg sm:text-xl font-black tracking-tight text-[#091124] leading-none">NXG HIGHTECH</span>
-            <span class="text-[9px] font-bold tracking-widest text-[#0084d6] uppercase mt-0.5">SIEMENS SOLUTION PARTNER</span>
+            <span class="text-sm sm:text-xl font-black tracking-tight text-[#091124] leading-none">NXG HIGHTECH</span>
+            <span class="text-[8px] sm:text-[9px] font-bold tracking-wider sm:tracking-widest text-[#0084d6] uppercase mt-0.5">SIEMENS SOLUTION PARTNER</span>
           </div>
         </a>
 
@@ -163,10 +163,10 @@
           <a href="contact-us.html" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">Contact</a>
         </nav>
 
-        <!-- Right Side: Search & CTA Button (Mobile-Optimized to Match Mockup) -->
+        <!-- Right Side: Search & CTA Button (Exact Oval Match) -->
         <div class="flex items-center gap-2 sm:gap-3.5">
-          <button onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})" class="p-2 text-slate-500 hover:text-[#0084d6] transition" title="Search Solutions">
-            <i class="fa-solid fa-magnifying-glass text-sm sm:text-base"></i>
+          <button onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})" class="p-1.5 text-slate-500 hover:text-[#0084d6] transition text-sm sm:text-base flex-shrink-0" title="Search Solutions">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </button>
           
           <!-- Desktop CTA -->
@@ -175,16 +175,16 @@
             <i class="fa-solid fa-arrow-right text-[11px]"></i>
           </button>
 
-          <!-- Mobile Compact Pill Button (Exact Match to User Mockup) -->
-          <button onclick="openExpertModal()" class="sm:hidden flex flex-col items-center justify-center bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-[10px] font-bold px-3 py-1.5 rounded-2xl shadow-md shadow-blue-500/25 leading-tight">
+          <!-- Mobile Compact Oval Button (Exact Match to User Screenshot) -->
+          <button onclick="openExpertModal()" class="sm:hidden flex flex-col items-center justify-center bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-[10px] font-bold w-[74px] h-[50px] rounded-full shadow-md shadow-blue-500/25 leading-tight flex-shrink-0">
             <span>Talk to</span>
             <span class="inline-flex items-center gap-1">an <i class="fa-solid fa-arrow-right text-[8px]"></i></span>
             <span>Expert</span>
           </button>
 
           <!-- Mobile Hamburger -->
-          <button id="mobileMenuBtn" aria-label="Toggle Menu" class="lg:hidden p-1.5 text-slate-800 hover:text-[#0084d6] transition ml-0.5">
-            <i class="fa-solid fa-bars text-xl"></i>
+          <button id="mobileMenuBtn" aria-label="Toggle Menu" class="lg:hidden p-1.5 text-slate-800 hover:text-[#0084d6] transition text-xl flex-shrink-0 ml-1">
+            <i class="fa-solid fa-bars"></i>
           </button>
         </div>
 
@@ -252,10 +252,10 @@
 
 
   <!-- ================= 2. HERO SECTION ================= -->
-  <section class="relative bg-[#060c1d] text-white pt-12 sm:pt-16 pb-12 lg:pb-16 overflow-hidden">
+  <section class="relative bg-[#060f22] text-white pt-7 sm:pt-16 pb-10 sm:pb-16 overflow-hidden">
     
-    <!-- Background Grid Pattern -->
-    <div class="absolute inset-0 bg-hero-pattern opacity-30 pointer-events-none"></div>
+    <!-- Background Blueprint Grid Pattern (Exact Mobile Match) -->
+    <div class="absolute inset-0 bg-hero-pattern opacity-40 pointer-events-none"></div>
     <div class="absolute -top-40 -left-40 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -283,13 +283,13 @@
             NXG Hightech delivers end-to-end CAD/CAM/CAE/PLM and Digital Manufacturing solutions with Siemens Xcelerator to help businesses design better, manufacture smarter, and innovate faster.
           </p>
 
-          <!-- CTA Buttons: Side-by-Side on Mobile -->
-          <div class="flex flex-row items-center gap-2.5 sm:gap-3.5 pt-1">
-            <a href="#solutions" class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-[#0084d6] hover:bg-[#0074be] text-white text-xs sm:text-sm font-bold px-4 sm:px-6 py-2.5 sm:py-3 rounded-full transition-all duration-200 shadow-lg shadow-blue-500/25 active:scale-95 whitespace-nowrap">
+          <!-- CTA Buttons: Exact Side-by-Side with Glowing Blue Accent -->
+          <div class="flex items-center gap-2.5 sm:gap-3.5 pt-2">
+            <a href="#solutions" class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-[#0084d6] hover:bg-[#0074be] text-white text-xs sm:text-sm font-bold px-5 sm:px-6 py-3 rounded-full transition-all duration-200 shadow-[0_0_22px_rgba(0,132,214,0.55)] active:scale-95 whitespace-nowrap">
               <span>Explore Solutions</span>
               <i class="fa-solid fa-arrow-right text-[10px] sm:text-[11px]"></i>
             </a>
-            <button onclick="openExpertModal()" class="inline-flex items-center justify-center border border-white/40 hover:border-white text-white hover:bg-white/10 text-xs sm:text-sm font-semibold px-4 sm:px-6 py-2.5 sm:py-3 rounded-full transition-all duration-200 whitespace-nowrap">
+            <button onclick="openExpertModal()" class="inline-flex items-center justify-center border border-white/40 hover:border-white text-white hover:bg-white/10 text-xs sm:text-sm font-semibold px-4 sm:px-6 py-3 rounded-full transition-all duration-200 whitespace-nowrap">
               <span>Talk to an Expert</span>
             </button>
           </div>
@@ -329,9 +329,9 @@
         </div>
 
         <!-- Hero Right Column: Exact Cinematic Engineering Graphic in Dark Rounded Card -->
-        <div class="lg:col-span-6 flex justify-center items-center relative pt-4 lg:pt-0">
-          <div class="w-full max-w-[620px] rounded-2xl overflow-hidden border border-blue-500/25 bg-[#061026] shadow-2xl p-1 sm:p-1.5">
-            <img src="assets/hero_visual.png" alt="Engineering Ideas Today for a Smarter Tomorrow - Siemens Digital Industries Software" class="w-full h-auto object-cover rounded-xl drop-shadow-2xl">
+        <div class="lg:col-span-6 flex justify-center items-center relative pt-6 lg:pt-0">
+          <div class="w-full max-w-[620px] rounded-2xl overflow-hidden border border-blue-500/30 bg-[#071329] shadow-2xl p-1 sm:p-1.5">
+            <img src="assets/hero_visual.png" alt="Engineering Ideas Today for a Smarter Tomorrow - Siemens Digital Industries Software" class="w-full h-auto object-cover rounded-xl">
           </div>
         </div>
 

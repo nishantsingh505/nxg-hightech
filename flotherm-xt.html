@@ -44,14 +44,14 @@
   <!-- ================= 1. HEADER / NAVBAR ================= -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all duration-200 shadow-sm" id="mainHeader">
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
-      <div class="flex items-center justify-between h-[76px]">
+      <div class="flex items-center justify-between h-16 sm:h-[76px]">
         
-        <!-- Official Logo: NXG HIGHTECH -->
-        <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
-          <img src="assets/site_logo.png" alt="NXG HIGHTECH Logo" class="h-10 sm:h-11 w-auto object-contain">
+        <!-- Official Logo: NXG HIGHTECH (Mobile Responsive) -->
+        <a href="index.html" class="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+          <img src="assets/site_logo.png" alt="NXG HIGHTECH Logo" class="h-8 sm:h-11 w-auto object-contain">
           <div class="flex flex-col">
-            <span class="text-lg sm:text-xl font-black tracking-tight text-[#091124] leading-none">NXG HIGHTECH</span>
-            <span class="text-[9px] font-bold tracking-widest text-[#0084d6] uppercase mt-0.5">SIEMENS SOLUTION PARTNER</span>
+            <span class="text-sm sm:text-xl font-black tracking-tight text-[#091124] leading-none">NXG HIGHTECH</span>
+            <span class="text-[8px] sm:text-[9px] font-bold tracking-wider sm:tracking-widest text-[#0084d6] uppercase mt-0.5">SIEMENS SOLUTION PARTNER</span>
           </div>
         </a>
 
@@ -158,10 +158,10 @@
           <a href="contact-us.html" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">Contact</a>
         </nav>
 
-        <!-- Right Side: Search & CTA Button (Mobile-Optimized to Match Mockup) -->
+        <!-- Right Side: Search & CTA Button (Exact Oval Match) -->
         <div class="flex items-center gap-2 sm:gap-3.5">
-          <button onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})" class="p-2 text-slate-500 hover:text-[#0084d6] transition" title="Search Solutions">
-            <i class="fa-solid fa-magnifying-glass text-sm sm:text-base"></i>
+          <button onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})" class="p-1.5 text-slate-500 hover:text-[#0084d6] transition text-sm sm:text-base flex-shrink-0" title="Search Solutions">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </button>
           
           <!-- Desktop CTA -->
@@ -170,16 +170,16 @@
             <i class="fa-solid fa-arrow-right text-[11px]"></i>
           </button>
 
-          <!-- Mobile Compact Pill Button (Exact Match to User Mockup) -->
-          <button onclick="openExpertModal()" class="sm:hidden flex flex-col items-center justify-center bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-[10px] font-bold px-3 py-1.5 rounded-2xl shadow-md shadow-blue-500/25 leading-tight">
+          <!-- Mobile Compact Oval Button (Exact Match to User Screenshot) -->
+          <button onclick="openExpertModal()" class="sm:hidden flex flex-col items-center justify-center bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-[10px] font-bold w-[74px] h-[50px] rounded-full shadow-md shadow-blue-500/25 leading-tight flex-shrink-0">
             <span>Talk to</span>
             <span class="inline-flex items-center gap-1">an <i class="fa-solid fa-arrow-right text-[8px]"></i></span>
             <span>Expert</span>
           </button>
 
           <!-- Mobile Hamburger -->
-          <button id="mobileMenuBtn" aria-label="Toggle Menu" class="lg:hidden p-1.5 text-slate-800 hover:text-[#0084d6] transition ml-0.5">
-            <i class="fa-solid fa-bars text-xl"></i>
+          <button id="mobileMenuBtn" aria-label="Toggle Menu" class="lg:hidden p-1.5 text-slate-800 hover:text-[#0084d6] transition text-xl flex-shrink-0 ml-1">
+            <i class="fa-solid fa-bars"></i>
           </button>
         </div>
 
