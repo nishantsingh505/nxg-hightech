@@ -163,19 +163,27 @@
           <a href="contact-us.html" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">Contact</a>
         </nav>
 
-        <!-- Right Side: Search & CTA Button -->
-        <div class="flex items-center gap-3.5">
+        <!-- Right Side: Search & CTA Button (Mobile-Optimized to Match Mockup) -->
+        <div class="flex items-center gap-2 sm:gap-3.5">
           <button onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})" class="p-2 text-slate-500 hover:text-[#0084d6] transition" title="Search Solutions">
-            <i class="fa-solid fa-magnifying-glass text-sm"></i>
+            <i class="fa-solid fa-magnifying-glass text-sm sm:text-base"></i>
           </button>
           
-          <button onclick="openExpertModal()" class="inline-flex items-center gap-2 bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-xs sm:text-sm font-bold px-5 sm:px-6 py-2.5 rounded-full shadow-md shadow-blue-500/20 transition">
+          <!-- Desktop CTA -->
+          <button onclick="openExpertModal()" class="hidden sm:inline-flex items-center gap-2 bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-xs sm:text-sm font-bold px-5 sm:px-6 py-2.5 rounded-full shadow-md shadow-blue-500/20 transition whitespace-nowrap">
             <span>Talk to an Expert</span>
             <i class="fa-solid fa-arrow-right text-[11px]"></i>
           </button>
 
+          <!-- Mobile Compact Pill Button (Exact Match to User Mockup) -->
+          <button onclick="openExpertModal()" class="sm:hidden flex flex-col items-center justify-center bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-[10px] font-bold px-3 py-1.5 rounded-2xl shadow-md shadow-blue-500/25 leading-tight">
+            <span>Talk to</span>
+            <span class="inline-flex items-center gap-1">an <i class="fa-solid fa-arrow-right text-[8px]"></i></span>
+            <span>Expert</span>
+          </button>
+
           <!-- Mobile Hamburger -->
-          <button id="mobileMenuBtn" aria-label="Toggle Menu" class="lg:hidden p-2 text-slate-700 hover:text-[#0084d6]">
+          <button id="mobileMenuBtn" aria-label="Toggle Menu" class="lg:hidden p-1.5 text-slate-800 hover:text-[#0084d6] transition ml-0.5">
             <i class="fa-solid fa-bars text-xl"></i>
           </button>
         </div>
@@ -183,19 +191,61 @@
       </div>
     </div>
 
-    <!-- Mobile Navigation Drawer -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 shadow-xl">
-      <div class="flex flex-col gap-2.5 text-sm">
-        <a href="index.html" class="text-[#0084d6] font-bold py-1">Home</a>
-        <a href="#about" class="text-slate-700 hover:text-[#0084d6] py-1">About NXG Hightech</a>
-        <a href="nx-ug.html" class="text-slate-700 hover:text-[#0084d6] py-1">Siemens NX (CAD / CAM)</a>
-        <a href="teamcenter.html" class="text-slate-700 hover:text-[#0084d6] py-1">Teamcenter PLM</a>
-        <a href="solid-edge.html" class="text-slate-700 hover:text-[#0084d6] py-1">Solid Edge</a>
-        <a href="star-ccm.html" class="text-slate-700 hover:text-[#0084d6] py-1">Simcenter STAR-CCM+</a>
-        <a href="flotherm-xt.html" class="text-slate-700 hover:text-[#0084d6] py-1">FloTHERM XT</a>
-        <a href="services.html" class="text-slate-700 hover:text-[#0084d6] py-1">Services</a>
-        <a href="events.html" class="text-slate-700 hover:text-[#0084d6] py-1">Events & Tech Forum</a>
-        <a href="contact-us.html" class="text-slate-700 hover:text-[#0084d6] py-1">Contact Us</a>
+    <!-- Mobile Navigation Drawer (Modern Slide-Down with Icons & Quick Actions) -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white/98 backdrop-blur-xl border-b border-slate-200 px-5 py-4 shadow-2xl transition-all duration-300">
+      <div class="flex flex-col gap-1 text-xs sm:text-sm font-semibold divide-y divide-slate-100">
+        <div class="py-1.5 flex flex-col gap-1">
+          <a href="index.html" class="mobile-nav-link flex items-center justify-between text-[#0084d6] bg-blue-50/70 px-3 py-2 rounded-lg font-bold">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-house w-4"></i> Home</span>
+            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </a>
+          <a href="#about" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-building w-4 text-slate-400"></i> About NXG</span>
+            <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
+          </a>
+        </div>
+
+        <div class="py-2">
+          <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider px-3 mb-1">Siemens Solutions</div>
+          <div class="grid grid-cols-1 gap-1">
+            <a href="nx-ug.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-cube text-[#0084d6] w-4"></i> Siemens NX (CAD / CAM)</span>
+            </a>
+            <a href="teamcenter.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-sitemap text-[#00a3a6] w-4"></i> Teamcenter PLM</span>
+            </a>
+            <a href="solid-edge.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-shapes text-blue-500 w-4"></i> Solid Edge</span>
+            </a>
+            <a href="star-ccm.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-wind text-cyan-600 w-4"></i> Simcenter STAR-CCM+</span>
+            </a>
+            <a href="flotherm-xt.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-fire-flame-curved text-amber-500 w-4"></i> Simcenter FloTHERM XT</span>
+            </a>
+            <a href="services.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-gears text-purple-600 w-4"></i> Tecnomatix & Services</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="py-2 flex flex-col gap-1">
+          <a href="events.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-calendar-days text-[#0084d6] w-4"></i> Events & Tech Forum</span>
+            <span class="text-[9px] bg-cyan-100 text-[#0084d6] font-bold px-2 py-0.5 rounded-full">Upcoming</span>
+          </a>
+          <a href="contact-us.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-envelope text-slate-400 w-4"></i> Contact Us</span>
+            <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
+          </a>
+        </div>
+
+        <div class="pt-3">
+          <button onclick="openExpertModal(); mobileMenu.classList.add('hidden')" class="w-full bg-[#0084d6] hover:bg-[#0074be] text-white py-3 rounded-full font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-blue-500/25 active:scale-95">
+            <i class="fa-solid fa-comments"></i>
+            <span>Talk to an Expert</span>
+          </button>
+        </div>
       </div>
     </div>
   </header>
@@ -212,11 +262,11 @@
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         
-        <!-- Hero Left Column: Headline, Subtitle, CTAs, Badges -->
-        <div class="lg:col-span-6 space-y-6">
+        <!-- Hero Left Column: Headline, Subtitle, CTAs, Badges (Mobile-Matched) -->
+        <div class="lg:col-span-6 space-y-5 sm:space-y-6">
           
           <!-- Siemens Partner Pill -->
-          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-[#00c8ff] text-[10px] sm:text-[11px] font-bold tracking-wider uppercase">
+          <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-400/25 text-[#00c8ff] text-[9.5px] sm:text-[11px] font-bold tracking-wider uppercase">
             <span>SIEMENS DIGITAL INDUSTRIES SOFTWARE PARTNER</span>
           </div>
 
@@ -233,54 +283,56 @@
             NXG Hightech delivers end-to-end CAD/CAM/CAE/PLM and Digital Manufacturing solutions with Siemens Xcelerator to help businesses design better, manufacture smarter, and innovate faster.
           </p>
 
-          <!-- CTA Buttons -->
-          <div class="flex flex-wrap items-center gap-3.5 pt-1">
-            <a href="#solutions" class="inline-flex items-center gap-2 bg-[#0084d6] hover:bg-[#0074be] text-white text-xs sm:text-sm font-bold px-6 py-3 rounded-full transition-all duration-200 shadow-lg shadow-blue-500/25 active:scale-95">
+          <!-- CTA Buttons: Side-by-Side on Mobile -->
+          <div class="flex flex-row items-center gap-2.5 sm:gap-3.5 pt-1">
+            <a href="#solutions" class="inline-flex items-center justify-center gap-1.5 sm:gap-2 bg-[#0084d6] hover:bg-[#0074be] text-white text-xs sm:text-sm font-bold px-4 sm:px-6 py-2.5 sm:py-3 rounded-full transition-all duration-200 shadow-lg shadow-blue-500/25 active:scale-95 whitespace-nowrap">
               <span>Explore Solutions</span>
-              <i class="fa-solid fa-arrow-right text-[11px]"></i>
+              <i class="fa-solid fa-arrow-right text-[10px] sm:text-[11px]"></i>
             </a>
-            <button onclick="openExpertModal()" class="inline-flex items-center gap-2 border border-white/40 hover:border-white text-white hover:bg-white/10 text-xs sm:text-sm font-semibold px-6 py-3 rounded-full transition-all duration-200">
+            <button onclick="openExpertModal()" class="inline-flex items-center justify-center border border-white/40 hover:border-white text-white hover:bg-white/10 text-xs sm:text-sm font-semibold px-4 sm:px-6 py-2.5 sm:py-3 rounded-full transition-all duration-200 whitespace-nowrap">
               <span>Talk to an Expert</span>
             </button>
           </div>
 
-          <!-- 4 Bottom Features Inside Hero -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-800/80">
-            <div class="flex items-center gap-3">
-              <i class="fa-solid fa-shield-halved text-[#00c8ff] text-xl flex-shrink-0"></i>
+          <!-- 4 Features Badges: Exact 2x2 Grid on Mobile -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5 sm:gap-4 pt-6 border-t border-slate-800/80">
+            <div class="flex items-center gap-2.5 sm:gap-3">
+              <i class="fa-solid fa-shield-halved text-[#00c8ff] text-lg sm:text-xl flex-shrink-0"></i>
               <div class="text-left">
                 <div class="text-xs font-bold text-white leading-tight">Authorised</div>
-                <div class="text-[11px] text-slate-400">Siemens Partner</div>
+                <div class="text-[10px] sm:text-[11px] text-slate-400">Siemens Partner</div>
               </div>
             </div>
-            <div class="flex items-center gap-3">
-              <i class="fa-solid fa-headset text-[#00c8ff] text-xl flex-shrink-0"></i>
+            <div class="flex items-center gap-2.5 sm:gap-3">
+              <i class="fa-solid fa-headset text-[#00c8ff] text-lg sm:text-xl flex-shrink-0"></i>
               <div class="text-left">
                 <div class="text-xs font-bold text-white leading-tight">Expert Support</div>
-                <div class="text-[11px] text-slate-400">Across India</div>
+                <div class="text-[10px] sm:text-[11px] text-slate-400">Across India</div>
               </div>
             </div>
-            <div class="flex items-center gap-3">
-              <i class="fa-solid fa-microchip text-[#00c8ff] text-xl flex-shrink-0"></i>
+            <div class="flex items-center gap-2.5 sm:gap-3">
+              <i class="fa-solid fa-microchip text-[#00c8ff] text-lg sm:text-xl flex-shrink-0"></i>
               <div class="text-left">
                 <div class="text-xs font-bold text-white leading-tight">Industry-Focused</div>
-                <div class="text-[11px] text-slate-400">Solutions</div>
+                <div class="text-[10px] sm:text-[11px] text-slate-400">Solutions</div>
               </div>
             </div>
-            <div class="flex items-center gap-3">
-              <i class="fa-solid fa-chart-line text-[#00c8ff] text-xl flex-shrink-0"></i>
+            <div class="flex items-center gap-2.5 sm:gap-3">
+              <i class="fa-solid fa-chart-line text-[#00c8ff] text-lg sm:text-xl flex-shrink-0"></i>
               <div class="text-left">
                 <div class="text-xs font-bold text-white leading-tight">Training &amp;</div>
-                <div class="text-[11px] text-slate-400">Implementation</div>
+                <div class="text-[10px] sm:text-[11px] text-slate-400">Implementation</div>
               </div>
             </div>
           </div>
 
         </div>
 
-        <!-- Hero Right Column: Exact Cinematic Engineering Graphic -->
-        <div class="lg:col-span-6 flex justify-center items-center relative">
-          <img src="assets/hero_visual.png" alt="Engineering Ideas Today for a Smarter Tomorrow - Siemens Digital Industries Software" class="w-full h-auto max-w-[620px] object-contain drop-shadow-2xl rounded-xl">
+        <!-- Hero Right Column: Exact Cinematic Engineering Graphic in Dark Rounded Card -->
+        <div class="lg:col-span-6 flex justify-center items-center relative pt-4 lg:pt-0">
+          <div class="w-full max-w-[620px] rounded-2xl overflow-hidden border border-blue-500/25 bg-[#061026] shadow-2xl p-1 sm:p-1.5">
+            <img src="assets/hero_visual.png" alt="Engineering Ideas Today for a Smarter Tomorrow - Siemens Digital Industries Software" class="w-full h-auto object-cover rounded-xl drop-shadow-2xl">
+          </div>
         </div>
 
       </div>
@@ -641,6 +693,9 @@
             </div>
 
             <!-- Arrow 1 -> 2 -->
+            <div class="sm:hidden flex items-center justify-center text-slate-300 text-xs py-1">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
             <div class="hidden sm:flex items-center justify-center pt-3 text-slate-300 text-xs flex-shrink-0 px-1">
               <i class="fa-solid fa-arrow-right"></i>
             </div>
@@ -655,6 +710,9 @@
             </div>
 
             <!-- Arrow 2 -> 3 -->
+            <div class="sm:hidden flex items-center justify-center text-slate-300 text-xs py-1">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
             <div class="hidden sm:flex items-center justify-center pt-3 text-slate-300 text-xs flex-shrink-0 px-1">
               <i class="fa-solid fa-arrow-right"></i>
             </div>
@@ -669,6 +727,9 @@
             </div>
 
             <!-- Arrow 3 -> 4 -->
+            <div class="sm:hidden flex items-center justify-center text-slate-300 text-xs py-1">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
             <div class="hidden sm:flex items-center justify-center pt-3 text-slate-300 text-xs flex-shrink-0 px-1">
               <i class="fa-solid fa-arrow-right"></i>
             </div>
@@ -683,6 +744,9 @@
             </div>
 
             <!-- Arrow 4 -> 5 -->
+            <div class="sm:hidden flex items-center justify-center text-slate-300 text-xs py-1">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
             <div class="hidden sm:flex items-center justify-center pt-3 text-slate-300 text-xs flex-shrink-0 px-1">
               <i class="fa-solid fa-arrow-right"></i>
             </div>
@@ -799,18 +863,18 @@
           </div>
         </div>
 
-        <!-- Right: Siemens Building & Capabilities Card (Crystal-Clear HD) -->
-        <div class="lg:col-span-5 relative rounded-2xl overflow-hidden border border-slate-200 shadow-xl group aspect-[16/10] bg-slate-900">
-          <img src="assets/siemens_building_hd.jpg" alt="Siemens Channel Partner Headquarters" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-          <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/60"></div>
+        <!-- Right: Siemens Building & Capabilities Card (Mobile Responsive) -->
+        <div class="lg:col-span-5 relative rounded-2xl overflow-hidden border border-slate-200 shadow-xl group min-h-[280px] sm:aspect-[16/10] bg-slate-900">
+          <img src="assets/siemens_building_hd.jpg" alt="Siemens Channel Partner Headquarters" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+          <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/75"></div>
           
           <!-- Siemens Logo Badge -->
-          <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/50 shadow-md">
-            <img src="assets/logos/siemens.svg" alt="Siemens" class="h-4 w-auto">
+          <div class="absolute top-3 sm:top-4 left-3 sm:left-4 bg-white/95 backdrop-blur-md px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg border border-white/50 shadow-md z-10">
+            <img src="assets/logos/siemens.svg" alt="Siemens" class="h-3.5 sm:h-4 w-auto">
           </div>
 
           <!-- Floating Translucent Capability Card on the Right -->
-          <div class="absolute bottom-4 right-4 top-4 w-48 sm:w-52 bg-[#050f24]/90 backdrop-blur-md rounded-xl border border-white/15 p-3.5 flex flex-col justify-between shadow-2xl text-white">
+          <div class="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 top-3 sm:top-4 w-44 sm:w-52 bg-[#050f24]/90 backdrop-blur-md rounded-xl border border-white/15 p-3 sm:p-3.5 flex flex-col justify-between shadow-2xl text-white z-10">
             <div class="space-y-2.5">
               <div class="flex items-center gap-2.5 text-xs font-semibold">
                 <div class="w-6 h-6 rounded-lg bg-cyan-500/15 border border-cyan-400/25 text-[#00c8ff] flex items-center justify-center text-[10px]">
@@ -907,25 +971,25 @@
             <img src="assets/blueprint_car_hd.jpg" alt="Digital Twin Transformation" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700 opacity-90">
             <div class="absolute inset-0 bg-gradient-to-t from-[#040c1d] via-transparent to-transparent pointer-events-none"></div>
 
-            <!-- Callout Badges Overlaid with Crisp Vectors -->
-            <div class="absolute top-3 left-3 bg-[#030919]/85 backdrop-blur-md border border-cyan-400/30 px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow-lg">
-              <i class="fa-solid fa-bolt text-[#00c8ff] text-[10px]"></i>
-              <span class="text-[10px] font-bold text-white">Faster Time-to-Market</span>
+            <!-- Callout Badges Overlaid with Crisp Vectors (Mobile Responsive) -->
+            <div class="absolute top-2.5 left-2.5 bg-[#030919]/90 backdrop-blur-md border border-cyan-400/30 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full flex items-center gap-1 sm:gap-1.5 shadow-lg">
+              <i class="fa-solid fa-bolt text-[#00c8ff] text-[9px] sm:text-[10px]"></i>
+              <span class="text-[9px] sm:text-[10px] font-bold text-white whitespace-nowrap">Faster Time-to-Market</span>
             </div>
 
-            <div class="absolute top-3 right-3 bg-[#030919]/85 backdrop-blur-md border border-cyan-400/30 px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow-lg">
-              <i class="fa-solid fa-award text-[#00c8ff] text-[10px]"></i>
-              <span class="text-[10px] font-bold text-white">Better Quality</span>
+            <div class="absolute top-2.5 right-2.5 bg-[#030919]/90 backdrop-blur-md border border-cyan-400/30 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full flex items-center gap-1 sm:gap-1.5 shadow-lg">
+              <i class="fa-solid fa-award text-[#00c8ff] text-[9px] sm:text-[10px]"></i>
+              <span class="text-[9px] sm:text-[10px] font-bold text-white whitespace-nowrap">Better Quality</span>
             </div>
 
-            <div class="absolute bottom-3 left-3 bg-[#030919]/85 backdrop-blur-md border border-cyan-400/30 px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow-lg">
-              <i class="fa-solid fa-chart-line-down text-[#00c8ff] text-[10px]"></i>
-              <span class="text-[10px] font-bold text-white">Reduced Cost</span>
+            <div class="absolute bottom-2.5 left-2.5 bg-[#030919]/90 backdrop-blur-md border border-cyan-400/30 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full flex items-center gap-1 sm:gap-1.5 shadow-lg">
+              <i class="fa-solid fa-chart-line-down text-[#00c8ff] text-[9px] sm:text-[10px]"></i>
+              <span class="text-[9px] sm:text-[10px] font-bold text-white whitespace-nowrap">Reduced Cost</span>
             </div>
 
-            <div class="absolute bottom-3 right-3 bg-[#030919]/85 backdrop-blur-md border border-cyan-400/30 px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow-lg">
-              <i class="fa-solid fa-lightbulb text-[#00c8ff] text-[10px]"></i>
-              <span class="text-[10px] font-bold text-white">Higher Innovation</span>
+            <div class="absolute bottom-2.5 right-2.5 bg-[#030919]/90 backdrop-blur-md border border-cyan-400/30 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full flex items-center gap-1 sm:gap-1.5 shadow-lg">
+              <i class="fa-solid fa-lightbulb text-[#00c8ff] text-[9px] sm:text-[10px]"></i>
+              <span class="text-[9px] sm:text-[10px] font-bold text-white whitespace-nowrap">Higher Innovation</span>
             </div>
           </div>
         </div>

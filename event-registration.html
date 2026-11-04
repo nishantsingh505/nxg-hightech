@@ -42,88 +42,143 @@
 <body class="bg-white text-slate-800 font-sans antialiased overflow-x-hidden selection:bg-[#0084d6] selection:text-white">
 
   <!-- ================= 1. HEADER / NAVBAR ================= -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all duration-200" id="mainHeader">
-    <div class="max-w-[1240px] mx-auto px-4 sm:px-6">
-      <div class="flex items-center justify-between h-[72px]">
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all duration-200 shadow-sm" id="mainHeader">
+    <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-[76px]">
         
-        <!-- Official Logo: NXG HIGHTECH (P) LTD -->
-        <a href="index.html" class="flex items-center gap-2">
-          <img src="assets/site_logo.png" alt="NXG HIGHTECH (P) LTD" class="h-10 sm:h-11 w-auto object-contain">
-          <div class="hidden sm:flex flex-col">
-            <span class="text-base font-extrabold tracking-wide text-slate-900 leading-none">NXG HIGHTECH</span>
+        <!-- Official Logo: NXG HIGHTECH -->
+        <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+          <img src="assets/site_logo.png" alt="NXG HIGHTECH Logo" class="h-10 sm:h-11 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="text-lg sm:text-xl font-black tracking-tight text-[#091124] leading-none">NXG HIGHTECH</span>
             <span class="text-[9px] font-bold tracking-widest text-[#0084d6] uppercase mt-0.5">SIEMENS SOLUTION PARTNER</span>
           </div>
         </a>
 
-        <!-- Desktop Navigation Menu -->
-        <nav class="hidden lg:flex items-center gap-7 text-[13.5px] font-medium">
-          <a href="index.html" class="text-slate-700 hover:text-[#0084d6] transition-colors">Home</a>
-          <a href="index.html#about" class="text-slate-700 hover:text-[#0084d6] transition-colors">About</a>
-          
+        <!-- Desktop Navigation: Home, About, Solutions, Industries, Services, Resources, Contact -->
+        <nav class="hidden lg:flex items-center gap-6 xl:gap-8">
+          <a href="index.html" class="text-[#0084d6] font-bold border-b-2 border-[#0084d6] pb-1 text-sm">Home</a>
+          <a href="#about" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">About</a>
+
           <!-- Solutions Dropdown -->
-          <div class="relative group py-2">
-            <button class="flex items-center gap-1 text-slate-700 hover:text-[#0084d6] transition-colors focus:outline-none">
-              Solutions <i class="fa-solid fa-chevron-down text-[9px] ml-0.5 text-slate-500 group-hover:rotate-180 transition-transform"></i>
+          <div class="relative dropdown group py-2">
+            <button class="flex items-center gap-1 text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">
+              <span>Solutions</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-[#0084d6] transition-transform group-hover:rotate-180"></i>
             </button>
-            <div class="absolute top-full left-0 w-64 bg-white border border-slate-200 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 -translate-y-1 group-hover:translate-y-0">
-              <a href="nx-ug.html" class="flex items-center gap-2 px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">Siemens NX CAD (3D Design)</a>
-              <a href="nx-ug.html#cam" class="flex items-center gap-2 px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">Siemens NX CAM (Manufacturing)</a>
-              <a href="teamcenter.html" class="flex items-center gap-2 px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">Teamcenter PLM (Lifecycle)</a>
-              <a href="solid-edge.html" class="flex items-center gap-2 px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">Solid Edge 3D CAD</a>
-              <a href="star-ccm.html" class="flex items-center gap-2 px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">Simcenter STAR-CCM+</a>
-              <a href="flotherm-xt.html" class="flex items-center gap-2 px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">FloTHERM XT Thermal</a>
-              <div class="border-t border-slate-100 my-1"></div>
-              <a href="index.html#solutions" class="flex items-center gap-2 px-4 py-1.5 hover:bg-slate-50 text-[#0084d6] text-xs font-semibold">View All Solutions →</a>
+            <div class="dropdown-menu absolute top-full left-0 hidden w-64 bg-white border border-slate-200 rounded-xl shadow-xl py-2 z-50">
+              <a href="nx-ug.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">
+                <i class="fa-solid fa-cube text-[#0084d6] w-4"></i>
+                <div>
+                  <div class="font-bold">Siemens NX (CAD / CAM)</div>
+                  <div class="text-[10px] text-slate-500">Product Design & 5-Axis CAM</div>
+                </div>
+              </a>
+              <a href="teamcenter.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">
+                <i class="fa-solid fa-sitemap text-[#00a3a6] w-4"></i>
+                <div>
+                  <div class="font-bold">Teamcenter PLM</div>
+                  <div class="text-[10px] text-slate-500">Lifecycle & BOM Collaboration</div>
+                </div>
+              </a>
+              <a href="solid-edge.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">
+                <i class="fa-solid fa-shapes text-blue-500 w-4"></i>
+                <div>
+                  <div class="font-bold">Solid Edge</div>
+                  <div class="text-[10px] text-slate-500">Synchronous 3D Design</div>
+                </div>
+              </a>
+              <a href="star-ccm.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">
+                <i class="fa-solid fa-wind text-cyan-600 w-4"></i>
+                <div>
+                  <div class="font-bold">Simcenter STAR-CCM+</div>
+                  <div class="text-[10px] text-slate-500">CFD & Multiphysics Simulation</div>
+                </div>
+              </a>
+              <a href="flotherm-xt.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">
+                <i class="fa-solid fa-fire-flame-curved text-amber-500 w-4"></i>
+                <div>
+                  <div class="font-bold">Simcenter FloTHERM XT</div>
+                  <div class="text-[10px] text-slate-500">Electronics Cooling Analysis</div>
+                </div>
+              </a>
+              <a href="services.html" class="flex items-center gap-2.5 px-4 py-2.5 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">
+                <i class="fa-solid fa-gears text-purple-600 w-4"></i>
+                <div>
+                  <div class="font-bold">Tecnomatix</div>
+                  <div class="text-[10px] text-slate-500">Digital Factory & Robotics</div>
+                </div>
+              </a>
             </div>
           </div>
 
           <!-- Industries Dropdown -->
-          <div class="relative group py-2">
-            <button class="flex items-center gap-1 hover:text-[#0084d6] text-slate-700 transition-colors focus:outline-none">
-              Industries <i class="fa-solid fa-chevron-down text-[9px] ml-0.5 text-slate-500 group-hover:rotate-180 transition-transform"></i>
+          <div class="relative dropdown group py-2">
+            <button class="flex items-center gap-1 text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">
+              <span>Industries</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-[#0084d6] transition-transform group-hover:rotate-180"></i>
             </button>
-            <div class="absolute top-full left-0 w-60 bg-white border border-slate-200 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 -translate-y-1 group-hover:translate-y-0">
-              <a href="index.html#industries" class="block px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">Mold, Tool & Die</a>
-              <a href="index.html#industries" class="block px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">Automotive & Lighting</a>
-              <a href="index.html#industries" class="block px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">Industrial & Heavy Machinery</a>
-              <a href="index.html#industries" class="block px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">Consumer Goods & Appliances</a>
-              <a href="index.html#industries" class="block px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">Sheet Metal & Fabrication</a>
-              <a href="index.html#industries" class="block px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">Medical Devices</a>
+            <div class="dropdown-menu absolute top-full left-0 hidden w-56 bg-white border border-slate-200 rounded-xl shadow-xl py-2 z-50">
+              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Mold-Tool-Die</a>
+              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Automotive & EV</a>
+              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Consumer Goods</a>
+              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Plastic Components</a>
+              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Medical Devices</a>
+              <a href="#industries" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Sheet Metal & Machinery</a>
             </div>
           </div>
 
-          <a href="services.html" class="text-slate-700 hover:text-[#0084d6] transition-colors">Services</a>
-
-          <!-- Events Dropdown -->
-          <div class="relative group py-2">
-            <button class="flex items-center gap-1 text-[#0084d6] font-semibold transition-colors focus:outline-none">
-              Events <i class="fa-solid fa-chevron-down text-[9px] ml-0.5 text-slate-500 group-hover:rotate-180 transition-transform"></i>
+          <!-- Services Dropdown -->
+          <div class="relative dropdown group py-2">
+            <button class="flex items-center gap-1 text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">
+              <span>Services</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-[#0084d6] transition-transform group-hover:rotate-180"></i>
             </button>
-            <div class="absolute top-full left-0 w-56 bg-white border border-slate-200 rounded-xl shadow-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 -translate-y-1 group-hover:translate-y-0">
-              <a href="events.html" class="block px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">Siemens Tech Forum 2024</a>
-              <a href="event-registration.html" class="block px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">Event Registration</a>
-              <a href="index.html#blog" class="block px-4 py-2 hover:bg-slate-50 text-slate-700 text-xs font-medium">Technical Blog & Insights</a>
+            <div class="dropdown-menu absolute top-full left-0 hidden w-60 bg-white border border-slate-200 rounded-xl shadow-xl py-2 z-50">
+              <a href="services.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Software Sales & Support</a>
+              <a href="teamcenter.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Teamcenter Implementation</a>
+              <a href="services.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Legacy CAD Data Migration</a>
+              <a href="services.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Design & Simulation Consultancy</a>
+              <a href="nx-ug.html#cam" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">CAM & Post-Processor Service</a>
             </div>
           </div>
 
-          <a href="contact-us.html" class="text-slate-700 hover:text-[#0084d6] transition-colors">Contact</a>
+          <!-- Resources Dropdown -->
+          <div class="relative dropdown group py-2">
+            <button class="flex items-center gap-1 text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">
+              <span>Resources</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:text-[#0084d6] transition-transform group-hover:rotate-180"></i>
+            </button>
+            <div class="dropdown-menu absolute top-full left-0 hidden w-52 bg-white border border-slate-200 rounded-xl shadow-xl py-2 z-50">
+              <a href="events.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Events & Tech Forum</a>
+              <a href="event-registration.html" class="block px-4 py-2 text-xs text-slate-700 hover:bg-slate-50 hover:text-[#0084d6]">Event Registration</a>
+            </div>
+          </div>
+
+          <a href="contact-us.html" class="text-slate-700 hover:text-[#0084d6] transition-colors text-sm font-semibold">Contact</a>
         </nav>
 
-        <!-- Right Side: Search & CTA -->
-        <div class="hidden sm:flex items-center gap-5">
-          <button id="searchBtn" aria-label="Search" class="text-[#0084d6] hover:text-[#006bb0] transition p-1 text-sm">
-            <i class="fa-solid fa-magnifying-glass"></i>
+        <!-- Right Side: Search & CTA Button (Mobile-Optimized to Match Mockup) -->
+        <div class="flex items-center gap-2 sm:gap-3.5">
+          <button onclick="document.getElementById('solutions').scrollIntoView({behavior:'smooth'})" class="p-2 text-slate-500 hover:text-[#0084d6] transition" title="Search Solutions">
+            <i class="fa-solid fa-magnifying-glass text-sm sm:text-base"></i>
           </button>
           
-          <button onclick="openExpertModal()" class="inline-flex items-center gap-2 bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-[13px] font-semibold px-5 py-2.5 rounded-full shadow-sm transition">
+          <!-- Desktop CTA -->
+          <button onclick="openExpertModal()" class="hidden sm:inline-flex items-center gap-2 bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-xs sm:text-sm font-bold px-5 sm:px-6 py-2.5 rounded-full shadow-md shadow-blue-500/20 transition whitespace-nowrap">
             <span>Talk to an Expert</span>
             <i class="fa-solid fa-arrow-right text-[11px]"></i>
           </button>
-        </div>
 
-        <!-- Mobile Menu Toggle -->
-        <div class="flex lg:hidden items-center gap-2">
-          <button id="mobileMenuBtn" aria-label="Toggle Menu" class="p-2 text-slate-700 hover:text-[#0084d6]">
+          <!-- Mobile Compact Pill Button (Exact Match to User Mockup) -->
+          <button onclick="openExpertModal()" class="sm:hidden flex flex-col items-center justify-center bg-[#0084d6] hover:bg-[#0074be] active:scale-95 text-white text-[10px] font-bold px-3 py-1.5 rounded-2xl shadow-md shadow-blue-500/25 leading-tight">
+            <span>Talk to</span>
+            <span class="inline-flex items-center gap-1">an <i class="fa-solid fa-arrow-right text-[8px]"></i></span>
+            <span>Expert</span>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button id="mobileMenuBtn" aria-label="Toggle Menu" class="lg:hidden p-1.5 text-slate-800 hover:text-[#0084d6] transition ml-0.5">
             <i class="fa-solid fa-bars text-xl"></i>
           </button>
         </div>
@@ -131,23 +186,61 @@
       </div>
     </div>
 
-    <!-- Mobile Drawer -->
-    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 shadow-lg">
-      <div class="flex flex-col gap-3 text-sm font-medium text-slate-800">
-        <a href="index.html" class="mobile-nav-link text-[#0084d6]">Home</a>
-        <a href="index.html#about" class="mobile-nav-link hover:text-[#0084d6]">About</a>
-        <a href="nx-ug.html" class="mobile-nav-link hover:text-[#0084d6]">Siemens NX (CAD & CAM)</a>
-        <a href="teamcenter.html" class="mobile-nav-link hover:text-[#0084d6]">Teamcenter PLM</a>
-        <a href="solid-edge.html" class="mobile-nav-link hover:text-[#0084d6]">Solid Edge</a>
-        <a href="star-ccm.html" class="mobile-nav-link hover:text-[#0084d6]">Star-CCM+</a>
-        <a href="flotherm-xt.html" class="mobile-nav-link hover:text-[#0084d6]">FloTHERM XT</a>
-        <a href="services.html" class="mobile-nav-link hover:text-[#0084d6]">Services</a>
-        <a href="events.html" class="mobile-nav-link hover:text-[#0084d6]">Events & Tech Forum</a>
-        <a href="event-registration.html" class="mobile-nav-link hover:text-[#0084d6]">Event Registration</a>
-        <a href="contact-us.html" class="mobile-nav-link hover:text-[#0084d6]">Contact Us</a>
-        <button onclick="openExpertModal()" class="mt-2 w-full bg-[#0084d6] text-white py-2.5 rounded-full font-semibold text-xs">
-          Talk to an Expert →
-        </button>
+    <!-- Mobile Navigation Drawer (Modern Slide-Down with Icons & Quick Actions) -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white/98 backdrop-blur-xl border-b border-slate-200 px-5 py-4 shadow-2xl transition-all duration-300">
+      <div class="flex flex-col gap-1 text-xs sm:text-sm font-semibold divide-y divide-slate-100">
+        <div class="py-1.5 flex flex-col gap-1">
+          <a href="index.html" class="mobile-nav-link flex items-center justify-between text-[#0084d6] bg-blue-50/70 px-3 py-2 rounded-lg font-bold">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-house w-4"></i> Home</span>
+            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+          </a>
+          <a href="#about" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-building w-4 text-slate-400"></i> About NXG</span>
+            <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
+          </a>
+        </div>
+
+        <div class="py-2">
+          <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider px-3 mb-1">Siemens Solutions</div>
+          <div class="grid grid-cols-1 gap-1">
+            <a href="nx-ug.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-cube text-[#0084d6] w-4"></i> Siemens NX (CAD / CAM)</span>
+            </a>
+            <a href="teamcenter.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-sitemap text-[#00a3a6] w-4"></i> Teamcenter PLM</span>
+            </a>
+            <a href="solid-edge.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-shapes text-blue-500 w-4"></i> Solid Edge</span>
+            </a>
+            <a href="star-ccm.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-wind text-cyan-600 w-4"></i> Simcenter STAR-CCM+</span>
+            </a>
+            <a href="flotherm-xt.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-fire-flame-curved text-amber-500 w-4"></i> Simcenter FloTHERM XT</span>
+            </a>
+            <a href="services.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-1.5 rounded-lg hover:bg-slate-50 transition">
+              <span class="flex items-center gap-2.5"><i class="fa-solid fa-gears text-purple-600 w-4"></i> Tecnomatix & Services</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="py-2 flex flex-col gap-1">
+          <a href="events.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-calendar-days text-[#0084d6] w-4"></i> Events & Tech Forum</span>
+            <span class="text-[9px] bg-cyan-100 text-[#0084d6] font-bold px-2 py-0.5 rounded-full">Upcoming</span>
+          </a>
+          <a href="contact-us.html" class="mobile-nav-link flex items-center justify-between text-slate-700 hover:text-[#0084d6] px-3 py-2 rounded-lg hover:bg-slate-50 transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-envelope text-slate-400 w-4"></i> Contact Us</span>
+            <i class="fa-solid fa-chevron-right text-[10px] text-slate-300"></i>
+          </a>
+        </div>
+
+        <div class="pt-3">
+          <button onclick="openExpertModal(); mobileMenu.classList.add('hidden')" class="w-full bg-[#0084d6] hover:bg-[#0074be] text-white py-3 rounded-full font-bold text-xs flex items-center justify-center gap-2 shadow-lg shadow-blue-500/25 active:scale-95">
+            <i class="fa-solid fa-comments"></i>
+            <span>Talk to an Expert</span>
+          </button>
+        </div>
       </div>
     </div>
   </header>
