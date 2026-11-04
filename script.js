@@ -214,25 +214,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (testContainer && testPrevBtn && testNextBtn) {
     testPrevBtn.addEventListener('click', () => {
-      testContainer.scrollBy({ left: -350, behavior: 'smooth' });
+      testContainer.scrollBy({ left: -320, behavior: 'smooth' });
     });
     testNextBtn.addEventListener('click', () => {
-      testContainer.scrollBy({ left: 350, behavior: 'smooth' });
+      testContainer.scrollBy({ left: 320, behavior: 'smooth' });
     });
   }
 
   // 9. Blog carousel scrolling
+  const blogContainer = document.getElementById('blogContainer');
   const blogPrevBtn = document.getElementById('blogPrevBtn');
   const blogNextBtn = document.getElementById('blogNextBtn');
 
-  if (blogPrevBtn && blogNextBtn) {
+  if (blogContainer && blogPrevBtn && blogNextBtn) {
     blogPrevBtn.addEventListener('click', () => {
-      const container = blogPrevBtn.closest('section').querySelector('.grid');
-      if (container) container.scrollBy({ left: -350, behavior: 'smooth' });
+      blogContainer.scrollBy({ left: -320, behavior: 'smooth' });
     });
     blogNextBtn.addEventListener('click', () => {
-      const container = blogNextBtn.closest('section').querySelector('.grid');
-      if (container) container.scrollBy({ left: 350, behavior: 'smooth' });
+      blogContainer.scrollBy({ left: 320, behavior: 'smooth' });
     });
   }
 
