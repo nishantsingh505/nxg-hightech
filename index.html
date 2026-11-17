@@ -400,21 +400,57 @@
       <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
         
         <!-- Left Side: Header & Overview Text -->
-        <div class="lg:w-[32%] flex-shrink-0 space-y-4">
-          <span class="text-xs font-bold uppercase tracking-wider text-[#0084d6] block">
-            SIEMENS PLM SOFTWARE SOLUTIONS
-          </span>
-          <h2 class="text-2xl sm:text-3xl lg:text-[34px] font-black text-[#091124] leading-[1.18] tracking-tight">
-            A Complete Portfolio for the Entire Product Development Journey
-          </h2>
-          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-            From design and simulation to manufacturing and lifecycle management, we bring the full power of Siemens Digital Industries Software to your business.
-          </p>
-          <div class="pt-2">
-            <a href="#portfolio-details" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0084d6] hover:text-[#006cb0] group transition">
-              <span>View All Solutions</span>
-              <i class="fa-solid fa-arrow-right text-[11px] group-hover:translate-x-1 transition-transform"></i>
-            </a>
+        <div class="lg:w-[32%] flex-shrink-0 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#0084d6] block">
+              SIEMENS PLM SOFTWARE SOLUTIONS
+            </span>
+            <h2 class="text-2xl sm:text-3xl lg:text-[34px] font-black text-[#091124] leading-[1.18] tracking-tight">
+              A Complete Portfolio for the Entire Product Development Journey
+            </h2>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              From design and simulation to manufacturing and lifecycle management, we bring the full power of Siemens Digital Industries Software to your business.
+            </p>
+            <div class="pt-1">
+              <a href="#portfolio-details" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-[#0084d6] hover:text-[#006cb0] group transition">
+                <span>View All Solutions</span>
+                <i class="fa-solid fa-arrow-right text-[11px] group-hover:translate-x-1 transition-transform"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Added Balance: Value Points & Quick Consultation Card -->
+          <div class="pt-4 border-t border-slate-100 space-y-3.5">
+            <div class="space-y-2">
+              <div class="flex items-center gap-2.5 text-xs text-slate-700 font-medium">
+                <div class="w-5 h-5 rounded-full bg-blue-50 text-[#0084d6] flex items-center justify-center flex-shrink-0 text-[10px]">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span>Genuine Siemens Commercial Licensing</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs text-slate-700 font-medium">
+                <div class="w-5 h-5 rounded-full bg-blue-50 text-[#0084d6] flex items-center justify-center flex-shrink-0 text-[10px]">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span>End-to-End Implementation & Migration</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs text-slate-700 font-medium">
+                <div class="w-5 h-5 rounded-full bg-blue-50 text-[#0084d6] flex items-center justify-center flex-shrink-0 text-[10px]">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span>Certified Engineer Training & On-Site Support</span>
+              </div>
+            </div>
+
+            <div class="bg-slate-50 border border-slate-200/80 rounded-xl p-3.5 flex items-center justify-between gap-3">
+              <div>
+                <p class="text-[11px] font-semibold text-slate-500">Need solution sizing?</p>
+                <p class="text-xs font-bold text-[#091124]">Consult our Siemens Specialists</p>
+              </div>
+              <button onclick="openExpertModal()" class="px-3 py-1.5 bg-[#0084d6] hover:bg-[#006cb0] text-white text-xs font-semibold rounded-lg transition-colors flex-shrink-0 shadow-sm">
+                Inquire Now
+              </button>
+            </div>
           </div>
         </div>
 
@@ -655,109 +691,132 @@
 
 
   <!-- ================= 6. OUR APPROACH ================= -->
-  <section class="py-12 sm:py-16 bg-white border-b border-slate-200">
+  <section class="py-14 sm:py-20 bg-white border-b border-slate-200">
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6">
       
-      <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
-        
-        <!-- Left Side: Copy & CTA Button -->
-        <div class="lg:w-[30%] flex-shrink-0 space-y-4">
+      <!-- Top Header Row: Full Width & Balanced -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 sm:mb-14">
+        <div class="max-w-2xl space-y-2.5">
           <span class="text-xs font-bold uppercase tracking-wider text-[#0084d6] block">
-            OUR APPROACH
+            OUR STRUCTURED METHODOLOGY
           </span>
-          <h2 class="text-2xl sm:text-3xl font-black text-[#091124] leading-tight">
-            From Vision to<br>Real-World Impact
+          <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black text-[#091124] tracking-tight leading-[1.15]">
+            From Vision to Real-World Impact
           </h2>
-          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-            We follow a structured approach to help you get maximum value from your Siemens investment.
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-xl">
+            We follow a proven 5-stage deployment framework to ensure maximum adoption, faster ROI, and zero disruption across your engineering lifecycle.
           </p>
-          <div class="pt-2">
-            <a href="services.html" class="inline-flex items-center gap-2 border border-[#0084d6] text-[#0084d6] hover:bg-[#0084d6] hover:text-white text-xs sm:text-sm font-bold px-6 py-2.5 rounded-full transition active:scale-95">
-              <span>Learn More</span>
-              <i class="fa-solid fa-arrow-right text-[10px]"></i>
-            </a>
+        </div>
+        <div class="flex-shrink-0">
+          <a href="services.html" class="inline-flex items-center gap-2 border border-[#0084d6] text-[#0084d6] hover:bg-[#0084d6] hover:text-white text-xs sm:text-sm font-bold px-6 py-2.5 rounded-full transition-all duration-200 active:scale-95 shadow-sm">
+            <span>Explore All Services</span>
+            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- 5-Step Process Cards: Full Width, Spacious, Elevated -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-5">
+        
+        <!-- Step 1 -->
+        <div class="bg-slate-50/80 hover:bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 hover:border-[#0084d6] transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between group relative">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-white group-hover:bg-[#0084d6] text-[#0084d6] group-hover:text-white border border-slate-200/70 group-hover:border-[#0084d6] flex items-center justify-center text-lg shadow-sm transition-all duration-300 flex-shrink-0">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <span class="text-xs font-black tracking-wider text-[#0084d6] bg-blue-50 px-2.5 py-1 rounded-full border border-blue-100">01</span>
+            </div>
+            <h4 class="text-sm sm:text-base font-bold text-[#091124] group-hover:text-[#0084d6] transition-colors mb-2">
+              Understand Your Goals
+            </h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              In-depth audit of your CAD/CAM/PLM bottlenecks and digital objectives.
+            </p>
+          </div>
+          <div class="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 z-10 text-slate-300 group-hover:text-[#0084d6] transition-colors text-xs pointer-events-none">
+            <i class="fa-solid fa-chevron-right"></i>
           </div>
         </div>
 
-        <!-- Right Side: 5-Step Process (Mobile Responsive Stepper) -->
-        <div class="lg:w-[70%] w-full">
-          <div class="grid grid-cols-1 sm:flex sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-2">
-            
-            <!-- Step 1 -->
-            <div class="flex items-center sm:flex-col sm:items-start gap-3.5 sm:gap-0 p-3 sm:p-0 rounded-xl bg-slate-50 sm:bg-transparent border border-slate-100 sm:border-none flex-1">
-              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center sm:mb-3 shadow-sm text-[#0084d6] flex-shrink-0">
-                <i class="fa-solid fa-bullseye text-base sm:text-lg"></i>
+        <!-- Step 2 -->
+        <div class="bg-slate-50/80 hover:bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 hover:border-[#0084d6] transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between group relative">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-white group-hover:bg-[#0084d6] text-[#0084d6] group-hover:text-white border border-slate-200/70 group-hover:border-[#0084d6] flex items-center justify-center text-lg shadow-sm transition-all duration-300 flex-shrink-0">
+                <i class="fa-solid fa-laptop-code"></i>
               </div>
-              <div>
-                <div class="text-[10px] sm:text-[11px] font-black text-[#0084d6] tracking-wider mb-0.5">01</div>
-                <div class="text-xs font-bold text-[#091124] leading-snug">Understand<br class="hidden sm:inline"> Your Goals</div>
-              </div>
+              <span class="text-xs font-black tracking-wider text-[#0084d6] bg-blue-50 px-2.5 py-1 rounded-full border border-blue-100">02</span>
             </div>
+            <h4 class="text-sm sm:text-base font-bold text-[#091124] group-hover:text-[#0084d6] transition-colors mb-2">
+              Recommend Solutions
+            </h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Curate the exact Siemens modules, licensing, and infrastructure fit.
+            </p>
+          </div>
+          <div class="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 z-10 text-slate-300 group-hover:text-[#0084d6] transition-colors text-xs pointer-events-none">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
 
-            <!-- Desktop Arrow 1 -> 2 -->
-            <div class="hidden sm:flex items-center justify-center pt-3 text-slate-300 text-xs flex-shrink-0 px-1">
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-            <!-- Step 2 -->
-            <div class="flex items-center sm:flex-col sm:items-start gap-3.5 sm:gap-0 p-3 sm:p-0 rounded-xl bg-slate-50 sm:bg-transparent border border-slate-100 sm:border-none flex-1">
-              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center sm:mb-3 shadow-sm text-[#0084d6] flex-shrink-0">
-                <i class="fa-solid fa-laptop-code text-base sm:text-lg"></i>
+        <!-- Step 3 -->
+        <div class="bg-slate-50/80 hover:bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 hover:border-[#0084d6] transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between group relative">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-white group-hover:bg-[#0084d6] text-[#0084d6] group-hover:text-white border border-slate-200/70 group-hover:border-[#0084d6] flex items-center justify-center text-lg shadow-sm transition-all duration-300 flex-shrink-0">
+                <i class="fa-solid fa-gears"></i>
               </div>
-              <div>
-                <div class="text-[10px] sm:text-[11px] font-black text-[#0084d6] tracking-wider mb-0.5">02</div>
-                <div class="text-xs font-bold text-[#091124] leading-snug">Recommend<br class="hidden sm:inline"> Right Solutions</div>
-              </div>
+              <span class="text-xs font-black tracking-wider text-[#0084d6] bg-blue-50 px-2.5 py-1 rounded-full border border-blue-100">03</span>
             </div>
+            <h4 class="text-sm sm:text-base font-bold text-[#091124] group-hover:text-[#0084d6] transition-colors mb-2">
+              Implement &amp; Customize
+            </h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Seamless deployment, data migration, post-processor &amp; workflow setup.
+            </p>
+          </div>
+          <div class="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 z-10 text-slate-300 group-hover:text-[#0084d6] transition-colors text-xs pointer-events-none">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
 
-            <!-- Desktop Arrow 2 -> 3 -->
-            <div class="hidden sm:flex items-center justify-center pt-3 text-slate-300 text-xs flex-shrink-0 px-1">
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="flex items-center sm:flex-col sm:items-start gap-3.5 sm:gap-0 p-3 sm:p-0 rounded-xl bg-slate-50 sm:bg-transparent border border-slate-100 sm:border-none flex-1">
-              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center sm:mb-3 shadow-sm text-[#0084d6] flex-shrink-0">
-                <i class="fa-solid fa-gears text-base sm:text-lg"></i>
+        <!-- Step 4 -->
+        <div class="bg-slate-50/80 hover:bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 hover:border-[#0084d6] transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between group relative">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-white group-hover:bg-[#0084d6] text-[#0084d6] group-hover:text-white border border-slate-200/70 group-hover:border-[#0084d6] flex items-center justify-center text-lg shadow-sm transition-all duration-300 flex-shrink-0">
+                <i class="fa-solid fa-users"></i>
               </div>
-              <div>
-                <div class="text-[10px] sm:text-[11px] font-black text-[#0084d6] tracking-wider mb-0.5">03</div>
-                <div class="text-xs font-bold text-[#091124] leading-snug">Implement<br class="hidden sm:inline"> &amp; Customize</div>
-              </div>
+              <span class="text-xs font-black tracking-wider text-[#0084d6] bg-blue-50 px-2.5 py-1 rounded-full border border-blue-100">04</span>
             </div>
+            <h4 class="text-sm sm:text-base font-bold text-[#091124] group-hover:text-[#0084d6] transition-colors mb-2">
+              Train Your Team
+            </h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Hands-on corporate training, masterclasses, and certified coaching.
+            </p>
+          </div>
+          <div class="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 z-10 text-slate-300 group-hover:text-[#0084d6] transition-colors text-xs pointer-events-none">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
 
-            <!-- Desktop Arrow 3 -> 4 -->
-            <div class="hidden sm:flex items-center justify-center pt-3 text-slate-300 text-xs flex-shrink-0 px-1">
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-            <!-- Step 4 -->
-            <div class="flex items-center sm:flex-col sm:items-start gap-3.5 sm:gap-0 p-3 sm:p-0 rounded-xl bg-slate-50 sm:bg-transparent border border-slate-100 sm:border-none flex-1">
-              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center sm:mb-3 shadow-sm text-[#0084d6] flex-shrink-0">
-                <i class="fa-solid fa-users text-base sm:text-lg"></i>
+        <!-- Step 5 -->
+        <div class="bg-slate-50/80 hover:bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 hover:border-[#0084d6] transition-all duration-300 hover:shadow-xl hover:-translate-y-1 flex flex-col justify-between group relative">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-white group-hover:bg-[#0084d6] text-[#0084d6] group-hover:text-white border border-slate-200/70 group-hover:border-[#0084d6] flex items-center justify-center text-lg shadow-sm transition-all duration-300 flex-shrink-0">
+                <i class="fa-solid fa-headset"></i>
               </div>
-              <div>
-                <div class="text-[10px] sm:text-[11px] font-black text-[#0084d6] tracking-wider mb-0.5">04</div>
-                <div class="text-xs font-bold text-[#091124] leading-snug">Train<br class="hidden sm:inline"> Your Team</div>
-              </div>
+              <span class="text-xs font-black tracking-wider text-[#0084d6] bg-blue-50 px-2.5 py-1 rounded-full border border-blue-100">05</span>
             </div>
-
-            <!-- Desktop Arrow 4 -> 5 -->
-            <div class="hidden sm:flex items-center justify-center pt-3 text-slate-300 text-xs flex-shrink-0 px-1">
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-
-            <!-- Step 5 -->
-            <div class="flex items-center sm:flex-col sm:items-start gap-3.5 sm:gap-0 p-3 sm:p-0 rounded-xl bg-slate-50 sm:bg-transparent border border-slate-100 sm:border-none flex-1">
-              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-50 border border-blue-100 flex items-center justify-center sm:mb-3 shadow-sm text-[#0084d6] flex-shrink-0">
-                <i class="fa-solid fa-headset text-base sm:text-lg"></i>
-              </div>
-              <div>
-                <div class="text-[10px] sm:text-[11px] font-black text-[#0084d6] tracking-wider mb-0.5">05</div>
-                <div class="text-xs font-bold text-[#091124] leading-snug">Ongoing<br class="hidden sm:inline"> Support</div>
-              </div>
-            </div>
-
+            <h4 class="text-sm sm:text-base font-bold text-[#091124] group-hover:text-[#0084d6] transition-colors mb-2">
+              Ongoing Support
+            </h4>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Dedicated helpdesk, priority technical support, and version upgrades.
+            </p>
           </div>
         </div>
 
@@ -777,49 +836,49 @@
     <div class="absolute inset-0 bg-gradient-to-r from-[#040c1d] via-[#040c1d]/90 to-transparent pointer-events-none"></div>
 
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6 relative z-10">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 items-center">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10 items-center">
         
         <!-- Stat 1 -->
-        <div class="flex items-center gap-3.5">
-          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-500/10 border border-blue-400/20 text-[#00c8ff] flex items-center justify-center text-base sm:text-lg flex-shrink-0">
+        <div class="flex items-center gap-4 sm:gap-5">
+          <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-[#0084d6]/25 to-[#00c8ff]/10 border border-[#00c8ff]/35 text-[#00c8ff] flex items-center justify-center text-xl sm:text-2xl shadow-[0_0_20px_rgba(0,200,255,0.18)] flex-shrink-0">
             <i class="fa-solid fa-award"></i>
           </div>
           <div>
-            <div class="text-xl sm:text-3xl font-black text-white leading-none">10+</div>
-            <div class="text-[11px] sm:text-xs text-slate-300 font-medium mt-1 leading-tight">Years of Experience</div>
+            <div class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-none">10+</div>
+            <div class="text-xs sm:text-sm text-slate-300 font-medium mt-1.5 leading-tight">Years of Experience</div>
           </div>
         </div>
 
         <!-- Stat 2 -->
-        <div class="flex items-center gap-3.5">
-          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-500/10 border border-blue-400/20 text-[#00c8ff] flex items-center justify-center text-base sm:text-lg flex-shrink-0">
+        <div class="flex items-center gap-4 sm:gap-5">
+          <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-[#0084d6]/25 to-[#00c8ff]/10 border border-[#00c8ff]/35 text-[#00c8ff] flex items-center justify-center text-xl sm:text-2xl shadow-[0_0_20px_rgba(0,200,255,0.18)] flex-shrink-0">
             <i class="fa-solid fa-handshake-angle"></i>
           </div>
           <div>
-            <div class="text-xl sm:text-3xl font-black text-white leading-none">200+</div>
-            <div class="text-[11px] sm:text-xs text-slate-300 font-medium mt-1 leading-tight">Happy Clients</div>
+            <div class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-none">200+</div>
+            <div class="text-xs sm:text-sm text-slate-300 font-medium mt-1.5 leading-tight">Happy Clients</div>
           </div>
         </div>
 
         <!-- Stat 3 -->
-        <div class="flex items-center gap-3.5">
-          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-500/10 border border-blue-400/20 text-[#00c8ff] flex items-center justify-center text-base sm:text-lg flex-shrink-0">
+        <div class="flex items-center gap-4 sm:gap-5">
+          <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-[#0084d6]/25 to-[#00c8ff]/10 border border-[#00c8ff]/35 text-[#00c8ff] flex items-center justify-center text-xl sm:text-2xl shadow-[0_0_20px_rgba(0,200,255,0.18)] flex-shrink-0">
             <i class="fa-solid fa-circle-check"></i>
           </div>
           <div>
-            <div class="text-xl sm:text-3xl font-black text-white leading-none">500+</div>
-            <div class="text-[11px] sm:text-xs text-slate-300 font-medium mt-1 leading-tight">Successful Projects</div>
+            <div class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-none">500+</div>
+            <div class="text-xs sm:text-sm text-slate-300 font-medium mt-1.5 leading-tight">Successful Projects</div>
           </div>
         </div>
 
         <!-- Stat 4 -->
-        <div class="flex items-center gap-3.5">
-          <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-blue-500/10 border border-blue-400/20 text-[#00c8ff] flex items-center justify-center text-base sm:text-lg flex-shrink-0">
+        <div class="flex items-center gap-4 sm:gap-5">
+          <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-[#0084d6]/25 to-[#00c8ff]/10 border border-[#00c8ff]/35 text-[#00c8ff] flex items-center justify-center text-xl sm:text-2xl shadow-[0_0_20px_rgba(0,200,255,0.18)] flex-shrink-0">
             <i class="fa-solid fa-user-shield"></i>
           </div>
           <div>
-            <div class="text-xl sm:text-3xl font-black text-white leading-none">50+</div>
-            <div class="text-[11px] sm:text-xs text-slate-300 font-medium mt-1 leading-tight">Certified Experts</div>
+            <div class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-none">50+</div>
+            <div class="text-xs sm:text-sm text-slate-300 font-medium mt-1.5 leading-tight">Certified Experts</div>
           </div>
         </div>
 
